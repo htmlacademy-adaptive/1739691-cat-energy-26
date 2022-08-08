@@ -2,6 +2,8 @@
 @use "./fonts.scss";
 @use "./visually-hidden.scss";
 @use "./container.scss";
+@use "./blocks/button.scss";
+@use "./blocks/section-title.scss";
 
 
 @use "./blocks/header/main-header.scss";
@@ -10,3 +12,5 @@
 @use "./blocks/header/site-list.scss";
 
 @use "./blocks/main/search-form.scss";
+@use "./blocks/main/programs.scss";
+@use "./blocks/main/features.scss";

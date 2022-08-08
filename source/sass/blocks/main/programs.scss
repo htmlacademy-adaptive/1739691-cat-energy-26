@@ -1,0 +1,62 @@
+.programs{
+
+    &__list{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 20px;
+    }
+
+    &__item{
+      background-color: #F2F2F2;
+      padding: 20px;
+      position: relative;
+    }
+
+      &__title{
+      margin: 0;
+      padding: 10px 0 0 71px;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 37px;
+      font-weight: 400;
+
+    }
+
+    &__description{
+      margin: 0;
+      padding: 22px 0;
+      color: #444444;
+      font-family: Arial;
+      border-bottom: 1px solid #D9D9D9;
+    }
+
+    &__link{
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      padding-top: 19px;
+      display: block;
+      font-size: 16px;
+      line-height: 16px;
+    }
+}
+
+
+.programs__item--weight-loss{
+
+  &::before{
+        content: url(../img/cat-slim.svg);
+        position: absolute;
+      }
+}
+
+.programs__item--weight-gain{
+
+  &::before{
+        content: url(../img/cat-pro.svg);
+        position: absolute;
+        left: 13px;
+      }
+}
