@@ -5,12 +5,16 @@
 @use "./blocks/button.scss";
 @use "./blocks/section-title.scss";
 
+@use "./blocks/global/container-content.scss";
 
 @use "./blocks/header/main-header.scss";
-@use "./blocks/header/container-content.scss";
 @use "./blocks/header/main-nav.scss";
 @use "./blocks/header/site-list.scss";
 
 @use "./blocks/main/search-form.scss";
 @use "./blocks/main/programs.scss";
 @use "./blocks/main/features.scss";
+@use "./blocks/main/example.scss";
+@use "./blocks/main/cooperation.scss";
+
+@use "./blocks/footer/main-footer.scss";

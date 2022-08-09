@@ -1,0 +1,48 @@
+.example{
+  background-color: #EAEAEA;
+
+
+    &__title{
+      padding-top: 66px;
+      margin-bottom: 40px;
+    }
+
+    &__description{
+      font-family: Arial;
+      color: #444444;
+      margin: 0 0 20px 0;
+    }
+
+    &__stats{
+      margin: 0;
+    }
+
+    &__costs-amount{
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+}
+
+.stats-list{
+  display: flex;
+
+    &__item{
+      margin: 0;
+      width: 50%;
+      text-align: center;
+    }
+
+    &__number{
+      margin: 0;
+      font-size: 24px;
+      line-height: 24px;
+
+    }
+
+    &__description{
+      font-family: Arial;
+      font-size: 12px;
+      line-height: 12px;
+      margin: 0 0 20px 0;
+    }
+}

@@ -1,0 +1,25 @@
+.cooperation{
+
+    &__wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      padding: 26px 0;
+    }
+
+    &__title{
+      margin: 0;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 139px;
+    }
+
+    &__address{
+      margin: 0;
+      font-family: Arial;
+      line-height: 20px;
+      width: 139px;
+    }
+}

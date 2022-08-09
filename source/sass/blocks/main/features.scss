@@ -15,11 +15,24 @@
   }
 
   &__item{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 21px;
 
+  }
+  &__item::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+    display: block;
   }
 
   &__description{
     margin: 0;
     color: #444444;
+    padding: 2px 0 4px;
+    font-family: 'Arial'
   }
+
 }
