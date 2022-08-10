@@ -2,10 +2,12 @@
 @use "./fonts.scss";
 @use "./visually-hidden.scss";
 @use "./container.scss";
+@use "./variables.scss";
+
 @use "./blocks/button.scss";
 @use "./blocks/section-title.scss";
-
 @use "./blocks/global/container-content.scss";
+
 
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/main-nav.scss";
@@ -16,5 +18,7 @@
 @use "./blocks/main/features.scss";
 @use "./blocks/main/example.scss";
 @use "./blocks/main/cooperation.scss";
+@use "./blocks/main/catalog.scss";
+@use "./blocks/main/extra-goods.scss";
 
 @use "./blocks/footer/main-footer.scss";
