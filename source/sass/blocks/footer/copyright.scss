@@ -1,0 +1,16 @@
+.copyright{
+  display: flex;
+  justify-content: space-between;
+
+    &__text{
+      align-self: center;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      color: #444444;
+    }
+
+    &__link{
+      line-height: 0;
+    }
+}

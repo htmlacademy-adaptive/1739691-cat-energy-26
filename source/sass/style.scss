@@ -17,8 +17,16 @@
 @use "./blocks/main/programs.scss";
 @use "./blocks/main/features.scss";
 @use "./blocks/main/example.scss";
+@use "./blocks/main/stats-list.scss";
 @use "./blocks/main/cooperation.scss";
 @use "./blocks/main/catalog.scss";
+@use "./blocks/main/card.scss";
+@use "./blocks/main/card-show-more.scss";
 @use "./blocks/main/extra-goods.scss";
+@use "./blocks/main/extra-goods-item.scss";
+@use "./blocks/main/special-offer.scss";
+@use "./blocks/main/form.scss";
 
 @use "./blocks/footer/main-footer.scss";
+@use "./blocks/footer/social-list.scss";
+@use "./blocks/footer/copyright.scss";
