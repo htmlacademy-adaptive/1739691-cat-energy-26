@@ -1,0 +1,17 @@
+.catalog{
+
+    &__list{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: grid;
+    }
+
+    &__title{
+        padding-bottom: 40px;
+    }
+
+    &__item{
+      padding: 20px 0 25px;
+    }
+}

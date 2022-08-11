@@ -1,0 +1,62 @@
+.form{
+  display: flex;
+  flex-direction: column;
+
+    &__title{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 36px;
+      margin: 0;
+      padding: 27px 0 37px;
+    }
+
+    &__descripton{
+      text-transform: uppercase;
+      padding-right: 54px;
+      margin: 0;
+      padding-bottom: 39px;
+    }
+
+    &__program-selection{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__group{
+      border: none;
+      margin: 0;
+      padding: 0 0 11px;
+      display: block;
+    }
+
+    &__item{
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    &__item-name{
+      font-size: 16px;
+      color: #444444;
+      text-transform: uppercase;
+      align-self: center;
+    }
+
+    &__item-text{
+      flex-grow: 1;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 18px;
+      color: #444444;
+      text-transform: uppercase;
+      border: none;
+      outline: 1px solid #E7E7E7;
+      padding: 12px 0 13px 15px;
+    }
+
+    &__required-fields-text{
+      text-align: center;
+      margin: 0;
+      padding: 21px 0 32px;
+    }
+}

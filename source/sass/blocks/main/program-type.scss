@@ -1,0 +1,24 @@
+.program-type{
+  padding: 22px 0 19px;
+
+    &__list{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__item{
+
+
+    }
+
+    &__control-label{
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #222222;
+    }
+
+}

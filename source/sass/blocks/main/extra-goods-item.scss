@@ -1,0 +1,32 @@
+.extra-goods-item{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+    &__title{
+      margin: 0;
+      padding: 13px 0;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #222222;
+    }
+
+    &__description{
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      font-family: Arial;
+      line-height: 14px;
+    }
+
+    &__value{
+      margin-left: auto;
+    }
+
+    &__button{
+      margin-bottom: 19px;
+    }
+}

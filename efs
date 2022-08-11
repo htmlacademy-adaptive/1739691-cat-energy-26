@@ -1,0 +1,79 @@
+[33mcommit 8402d088e3baea8e3dbd759c721bb842bd62c6c5[m[33m ([m[1;36mHEAD -> [m[1;32mmodule3-task1[m[33m, [m[1;31morigin/module3-task1[m[33m)[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Tue Aug 9 00:41:44 2022 +0300
+
+    Продолжение стилизации
+
+[33mcommit 5934e7cb25f4169449021ce7fca8c48551b15fc2[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Mon Aug 8 16:11:26 2022 +0300
+
+    добавление стилей
+
+[33mcommit 9ec2f9b56cd2fb69342d1a5179454b0e6b901ac1[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Mon Aug 8 00:12:19 2022 +0300
+
+    начало стилизации
+
+[33mcommit 259241396a457e0ce1c27e8e8a64e014a67864d5[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Aug 4 00:24:15 2022 +0300
+
+    :cat:
+
+[33mcommit b7d2bcea4dd691b4b33a865354b90dff3ca01ddb[m
+Merge: 83a30eb c789263
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Wed Aug 3 13:37:58 2022 +0300
+
+    Merge pull request #3 from Championgbi/module2-task1
+
+[33mcommit c7892635b8b71d0763b6ddb17ce88dabe860e4ef[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Tue Aug 2 22:28:15 2022 +0300
+
+    Исправление ошибок в разметке страниц
+
+[33mcommit ed2c4c95990e0a94ca10311d3b699cb738a8a3a8[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Sun Jul 31 23:36:18 2022 +0300
+
+    Разметка мобильной версии страниц
+
+[33mcommit 83a30eb26d602c1230976323258aae4229177a12[m
+Merge: 9403fae 2c6ba89
+Author: Unknown Keks <keksobot@users.noreply.github.com>
+Date:   Wed Jul 27 00:23:40 2022 +0300
+
+    Merge pull request #1 from Championgbi/module1-task1
+
+[33mcommit 2c6ba89da664bb07d3aed8e86e75e3808bc411a2[m[33m ([m[1;31morigin/module1-task1[m[33m)[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Tue Jul 26 23:32:15 2022 +0300
+
+    Добавляет ссылку
+
+[33mcommit 43654937f7e4247d5f9c0bca4ef8fcccc82fed72[m
+Author: Максим Щенников <championgbi@yandex.ru>
+Date:   Tue Jul 26 18:43:53 2022 +0300
+
+    Добавляет наставника
+
+[33mcommit 9403fae33f0c8bcf27336c29ef194b5bf34b4607[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Jul 26 18:24:39 2022 +0300
+
+    :cat:
+
+[33mcommit 2e7a3b455833be775a6d3abd4d71b5ea90ae1a22[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Jul 26 18:24:33 2022 +0300
+
+    :cat:
+
+[33mcommit 48626a4cb493753cd098603896ca634c245ffa71[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Jul 26 18:23:57 2022 +0300
+
+    :cat:

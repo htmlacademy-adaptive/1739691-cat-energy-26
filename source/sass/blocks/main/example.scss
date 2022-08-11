@@ -1,0 +1,24 @@
+.example{
+  background-color: #EAEAEA;
+
+
+    &__title{
+      padding-top: 66px;
+      margin-bottom: 40px;
+    }
+
+    &__description{
+      font-family: Arial;
+      color: #444444;
+      margin: 0 0 20px 0;
+    }
+
+    &__stats{
+      margin: 0;
+    }
+
+    &__costs-amount{
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+}
