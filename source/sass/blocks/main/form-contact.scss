@@ -1,0 +1,54 @@
+.form-contact{
+  padding: 26px 0 23px;
+  display: flex;
+  flex-direction: column;
+
+    &__title{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    &__item{
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding-bottom: 14px;
+    }
+
+    &__item-name{
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #444444;
+    }
+
+    &__item-wrapper{
+      position: relative;
+      display: flex;
+      flex-grow: 1;
+    }
+
+    &__input-detail{
+      flex-grow: 1;
+      padding: 14px 40px 14px 15px;
+      font: inherit;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #444444;
+      border: none;
+      outline: 1px solid #CDCDCD;
+    }
+
+    &__email-logo{
+      position: absolute;
+      right: 15px;
+      top: 17px;
+    }
+
+    &__phone-logo{
+      position: absolute;
+      right: 13px;
+      top: 13px;
+    }
+
+}
