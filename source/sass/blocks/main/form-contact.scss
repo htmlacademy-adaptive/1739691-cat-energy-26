@@ -2,53 +2,64 @@
   padding: 26px 0 23px;
   display: flex;
   flex-direction: column;
+}
 
-    &__title{
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 26px;
-    }
+.form-contact__title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
 
-    &__item{
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding-bottom: 14px;
-    }
-
-    &__item-name{
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #444444;
-    }
-
-    &__item-wrapper{
-      position: relative;
-      display: flex;
-      flex-grow: 1;
-    }
-
-    &__input-detail{
-      flex-grow: 1;
-      padding: 14px 40px 14px 15px;
-      font: inherit;
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #444444;
-      border: none;
-      outline: 1px solid #CDCDCD;
-    }
-
-    &__email-logo{
+    &::after{
       position: absolute;
-      right: 15px;
-      top: 17px;
+      content: "";
+      display: block;
+      background-color: $basic-green;
+      width: 99px;
+      height: 2px;
+      right: -20px;
+      top: 15px;
     }
+}
 
-    &__phone-logo{
-      position: absolute;
-      right: 13px;
-      top: 13px;
-    }
+.form-contact__item{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 14px;
+}
 
+.form-contact__item-name{
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special-dark-gray;
+}
+
+.form-contact__item-wrapper{
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-contact__input-detail{
+  flex-grow: 1;
+  padding: 14px 40px 14px 15px;
+  font: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special-dark-gray;
+  border: none;
+  outline: 1px solid $special-gray;
+}
+
+.form-contact__email-logo{
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+
+.form-contact__phone-logo{
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }

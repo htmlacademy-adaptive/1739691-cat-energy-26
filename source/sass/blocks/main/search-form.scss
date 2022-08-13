@@ -1,64 +1,69 @@
-.search-form {
-
+.search-form{
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
                                     rgba(104, 183, 56, 0.85)),
                     url(../img/index-background-desktop.png);
   background-size: auto 302px;
   background-repeat: no-repeat;
+}
 
-// .search-form__container{
-//   position: relative;
+.search-form__title{
+  text-align: center;
+  color: $white;
+  padding-top: 27px;
 
+}
 
-//   &__container::before{
-//     position: absolute;
-//     content: "";
-//     width: 320px;
-//     height: 302px;
-//     left: 50%;
-//     top: 0;
-//     transform: translateX(-50%);
-//     background-color: rgba(104, 183, 56, 0.85);
-//     background-repeat: no-repeat;
+.search-form__subtitle{
+  text-align: center;
+  color: $white;
+  margin: 0 auto;
+  padding: 25px 0 29px;
+  text-transform: uppercase;
+  line-height: 14px;
+}
 
+.search-form__button {
+  padding: 11px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
 
-//   }
-
-//   &__container::after{
-//     position: absolute;
-//     content: "";
-//     width: 320px;
-//     height: 302px;
-//     left: 50%;
-//     top: 0;
-//     transform: translateX(-50%);
-//     background-image: url("../img/index-background-desktop.png");
-//     background-repeat: no-repeat;
-
-//   }
-
-// }
-    &__title{
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 27px;
-
-    }
-
-    &__subtitle{
-      text-align: center;
-      color: #FFFFFF;
-      margin: 0 auto;
-      padding: 25px 0 29px;
-      text-transform: uppercase;
-      line-height: 14px;
-    }
-
-    &__button {
-      padding: 11px 44px;
-      font-size: 14px;
-      line-height: 18px;
-      display: block;
-      margin-bottom: 20px;
-    }
+@media (min-width: $tablet-width){
+  .search-form{
+    background-image: none;
+    background-size: auto;
   }
+
+  .search-form__container{
+    position: relative;
+  }
+
+  .search-form__title{
+    color: $black;
+    padding: 0 207px 0 80px;
+    text-align: start;
+  }
+
+  .search-form__subtitle{
+    color: $black;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 80px;
+    text-align: start;
+  }
+
+  .search-form__image{
+    display: block;
+    width: 100%;
+  }
+
+  .search-form__button{
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    margin: 0;
+  }
+}

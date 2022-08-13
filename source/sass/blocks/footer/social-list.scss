@@ -1,19 +1,26 @@
-.social-list{
+.social-list {
   display: flex;
   gap: 24px;
   list-style-type: none;
   margin: 0 auto;
   padding: 20px 0;
   align-items: center;
+}
 
-    &__item{
-      width: 28px;
-      text-align: center;
-    }
+.social-list__item {
+  width: 28px;
+  text-align: center;
+}
 
-    &__link{
-      display: block;
-      line-height: 0;
-      padding: 2px;
-    }
+.social-list__link {
+  display: block;
+  line-height: 0;
+  padding: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding: 0;
+
+  }
 }

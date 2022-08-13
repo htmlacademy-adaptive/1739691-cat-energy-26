@@ -1,25 +1,27 @@
 .card-show-more{
-  &__image{
-    margin: 5px auto 0;
-  }
 
-  &__title{
-    margin: 0;
-    padding: 23px 0 8px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #111111;
-  }
+}
 
-  &__description{
-    margin: 0;
-    padding-bottom: 21px;
-    text-align: center;
-    font-family: Arial;
-    font-size: 12px;
-    line-height: 16px;
-  }
+.card-show-more__image{
+  margin: 5px auto 0;
+}
+
+.card-show-more__title{
+  margin: 0;
+  padding: 23px 0 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $another-black;
+}
+
+.card-show-more__description{
+  margin: 0;
+  padding-bottom: 21px;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
 }

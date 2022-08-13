@@ -1,62 +1,102 @@
 .programs{
 
-    &__list{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 20px;
-    }
-
-    &__item{
-      background-color: #F2F2F2;
-      padding: 20px;
-      position: relative;
-    }
-
-      &__title{
-      margin: 0;
-      padding: 10px 0 0 71px;
-      text-transform: uppercase;
-      font-size: 24px;
-      line-height: 37px;
-      font-weight: 400;
-
-    }
-
-    &__description{
-      margin: 0;
-      padding: 22px 0;
-      color: #444444;
-      font-family: Arial;
-      border-bottom: 1px solid #D9D9D9;
-    }
-
-    &__link{
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #000000;
-      padding-top: 19px;
-      display: block;
-      font-size: 16px;
-      line-height: 16px;
-    }
 }
 
+.programs__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
 
-.programs__item--weight-loss{
+.programs__item{
+  background-color: $basic-gray;
+  padding: 20px;
+  position: relative;
 
-  &::before{
-        content: url(../img/cat-slim.svg);
-        position: absolute;
+  &--weight-loss{
+    &::before{
+      content: url(../img/cat-slim.svg);
+      position: absolute;
+    }
+  }
+
+  &--weight-gain{
+    &::before{
+      content: url(../img/cat-pro.svg);
+      position: absolute;
+      left: 13px;
+    }
+  }
+}
+
+.programs__title{
+  margin: 0;
+  padding: 10px 0 0 71px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.programs__description{
+  margin: 0;
+  padding: 22px 0;
+  color: $special-dark-gray;
+  font-family: "Arial";
+  border-bottom: 1px solid $border-gray;
+}
+
+.programs__link{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+  padding-top: 19px;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item{
+    padding: 77px 62px 57px 52px;
+
+    &--weight-loss{
+      &::before{
+        content: url(../img/cat-slim-tablet.svg);
+        right: 62px;
       }
-}
+    }
 
-.programs__item--weight-gain{
-
-  &::before{
-        content: url(../img/cat-pro.svg);
-        position: absolute;
-        left: 13px;
+    &--weight-gain{
+      &::before{
+        content: url(../img/cat-pro-tablet.svg);
+        right: 28px;
+        left: unset;
       }
+    }
+  }
+
+  .programs__title{
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+
+  }
+
+  .programs__description{
+    padding: 22px 0 52px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 340px;
+  }
+
+  .programs__link{
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
