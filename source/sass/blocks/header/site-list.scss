@@ -4,7 +4,7 @@
   padding: 0;
   list-style-type: none;
   text-transform: uppercase;
-  top: 66px;
+  top: 64px;
   left: 0;
   min-width: 100%;
   background-color: $white;
@@ -51,5 +51,17 @@
     line-height: 24px;
     text-transform: uppercase;
     border: none;
+    position: relative;
+
+    &--current::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      right: 1px;
+      left: 1px;
+      background-color: $basic-green;
+    }
   }
 }

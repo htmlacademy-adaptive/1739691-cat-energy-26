@@ -25,3 +25,22 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .card-show-more{
+    background-color: $white;
+    outline: 2px solid $basic-gray;
+  }
+
+  .card-show-more__title{
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+
+  .card-show-more__description{
+    font-size: 16px;
+    line-height: 18px;
+
+  }
+}
