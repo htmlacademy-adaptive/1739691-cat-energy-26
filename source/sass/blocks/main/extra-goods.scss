@@ -1,7 +1,3 @@
-.extra-goods{
-
-}
-
 .extra-goods__title{
   margin: 0;
   padding-bottom: 36px;
@@ -14,4 +10,44 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .extra-goods__list{
+    outline: 1px solid $special-gray;
+  }
+
+  .extra-goods__title{
+    position: relative;
+    margin-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 80px;
+
+    &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      left: -67px;
+      top: 20px;
+  }
+      &::after{
+        position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 328px;
+      height: 2px;
+      right: -30px;
+      top: 20px;
+    }
+  }
+
+  .extra-goods__list{
+    display: grid;
+  }
 }
