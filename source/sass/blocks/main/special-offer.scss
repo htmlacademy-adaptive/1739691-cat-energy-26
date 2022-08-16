@@ -5,17 +5,15 @@
 .special-offer__content-wrapper{
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
                                     rgba(104, 183, 56, 0.85)),
-                url(../img/special-offer-background.jpg);
+                    url(../img/special-offer-background.jpg);
   background-repeat: no-repeat;
   min-height: 290px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   margin: 35px 0;
 }
 
 .special-offer__image-gift{
-  margin-top: 59px;
+  margin: 59px auto 0;
 }
 
 .special-offer__description{
@@ -26,5 +24,27 @@
   color: $white;
   text-align: center;
   margin: 0;
-  padding: 48px 61px 0 58px;
+  padding: 0 61px 0 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer__content-wrapper{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+                                      rgba(104, 183, 56, 0.85)),
+                      url(../img/special-offer-background-tablet.jpg);
+  }
+
+  .special-offer__image-gift{
+    margin: 0 0 0 77px;
+  }
+
+  .special-offer__description{
+    text-align: left;
+    width: 161px;
+    margin: 0 0 0 70px;
+    padding: 0;
+  }
 }

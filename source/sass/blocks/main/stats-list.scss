@@ -18,6 +18,7 @@
   font-size: 24px;
   line-height: 24px;
   padding: 15px 0 17px;
+  text-transform: uppercase;
 }
 
 .stats-list__description{
@@ -26,10 +27,27 @@
   line-height: 12px;
   position: absolute;
   z-index: 1;
-  left: 18px;
+  left: 0;
+  right: 0;
   bottom: -13px;
   color: $special-dark-gray;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 14px;
   width: 87px;
   background-color: $basic-gray-3;
+}
+
+@media (min-width: $tablet-width) {
+  .stats-list__number{
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats-list__description{
+    padding: 7px;
+    min-width: max-content;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
 }

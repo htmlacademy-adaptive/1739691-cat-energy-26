@@ -5,8 +5,6 @@
 
 .form__title{
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   margin: 0;
   padding: 27px 0 37px;
 }
@@ -23,40 +21,20 @@
   flex-direction: column;
 }
 
-.form__group{
-  border: none;
-  margin: 0;
-  padding: 0 0 11px;
-  display: block;
-}
+@media (min-width: $tablet-width) {
+  .form__title{
+    padding: 39px 0 54px 40px
+  }
 
-.form__item{
-  display: flex;
-  gap: 12px;
-  margin-bottom: 14px;
-}
+  .form__descripton{
+    padding: 0;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+  }
 
-.form__item-name{
-  font-size: 16px;
-  color: $special-dark-gray;
-  text-transform: uppercase;
-  align-self: center;
-}
-
-.form__item-text{
-  flex-grow: 1;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-gray;
-  text-transform: uppercase;
-  border: none;
-  outline: 1px solid $basic-gray-4;
-  padding: 12px 0 13px 15px;
-}
-
-.form__required-fields-text{
-  text-align: center;
-  margin: 0;
-  padding: 21px 0 32px;
+  .form__program-selection{
+    padding: 66px 40px 72px;
+  }
 }
