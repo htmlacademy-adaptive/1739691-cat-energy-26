@@ -42,56 +42,57 @@
 
   <main class="main">
     <section class="form container-content">
-      <h1 class="form__title section-title">Подбор программы</h1>
+      <h1 class="form__title page-title">Подбор программы</h1>
       <p class="form__descripton">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="form__program-selection" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group details">
-          <legend class="visually-hidden">Кошачьи данные</legend>
-          <div class="details__item">
-            <label class="details__item-name" for="details-name">Имя:*</label>
-            <input class="details__item-text" type="text" name="details-name" id="form-name" placeholder="Барсик" required>
-          </div>
-          <div class="details__item">
-            <label class="details__item-name" for="details-weight">Вес (кг):*</label>
-            <input class="details__item-text" type="number" name="details-weight" id="details-weight" placeholder="7" required>
-          </div>
-          <div class="details__item">
-            <label class="details__item-name" for="details-age">Возраст (лет):</label>
-            <input class="details__item-text" type="number" name="details-age" id="details-age" placeholder="7">
-          </div>
-        </fieldset>
+        <div class="form__details-wrapper">
+          <fieldset class="form__group details">
+            <legend class="visually-hidden">Кошачьи данные</legend>
+            <div class="details__item">
+              <label class="details__item-name" for="details-name">Имя:*</label>
+              <input class="details__item-text" type="text" name="details-name" id="form-name" placeholder="Барсик" required>
+            </div>
+            <div class="details__item">
+              <label class="details__item-name" for="details-weight">Вес (кг):*</label>
+              <input class="details__item-text" type="number" name="details-weight" id="details-weight" placeholder="7" required>
+            </div>
+            <div class="details__item">
+              <label class="details__item-name" for="details-age">Возраст (лет):</label>
+              <input class="details__item-text" type="number" name="details-age" id="details-age" placeholder="7">
+            </div>
+          </fieldset>
 
-        <fieldset class="form__group program-type">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="program-type__list">
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program" checked>
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Похудение</span>
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program">
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Набор массы</span>
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program">
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
+          <fieldset class="form__group program-type">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="program-type__list">
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program" checked>
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Похудение</span>
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program">
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program">
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__group form-contact">
-          <legend class="form-contact__title">Контактные данные (владельца кота)</legend>
+          <legend class="form-contact__title section-title">Контактные данные (владельца кота)</legend>
           <div class="form-contact__item">
             <label class="form-contact__item-name" for="email">E-mail:*</label>
             <div class="form-contact__item-wrapper item-wrapper">
@@ -128,13 +129,13 @@
         </fieldset>
 
         <fieldset class="form__group form-comment">
-          <legend class="form-comment__title">Комментарий</legend>
-          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="10"
+          <legend class="form-comment__title section-title">Комментарий</legend>
+          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="8"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__group form-additionally">
-          <legend class="form-additionally__title">Дополнительно</legend>
+          <legend class="form-additionally__title section-title">Дополнительно</legend>
           <ul class="form-additionally__list">
             <li class="form-additionally__item">
               <label class="form-additionally__control">
@@ -164,19 +165,22 @@
                 <span class="form-additionally__control-label">Витамины</span>
               </label>
             </li>
+
           </ul>
 
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <div class="form__item-wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
 
-          <p class="form__required-fields-text">* — Обязательные поля</p>
+            <p class="form__required-fields-text">* — Обязательные поля</p>
+          </div>
         </fieldset>
       </form>
     </section>
 
     <section class="cooperation cooperation--gray">
       <div class="cooperation__wrapper container-content">
-        <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="cooperation__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__city">Санкт-Петербург</span></p>
       </div>
       <div class="cooperation__map-wrapper">
         <img class="cooperation__map" src="img/location.jpg" width="320" height="362"

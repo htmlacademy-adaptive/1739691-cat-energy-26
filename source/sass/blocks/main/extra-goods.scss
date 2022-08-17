@@ -1,9 +1,16 @@
 .extra-goods__title{
-  margin: 0;
+  position: relative;
   padding-bottom: 36px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+
+  &::after{
+    position: absolute;
+    content: "";
+    background-color: #68b738;
+    width: 53px;
+    height: 2px;
+    right: -30px;
+    top: 15px;
+}
 }
 
 .extra-goods__list{
@@ -19,10 +26,6 @@
   }
 
   .extra-goods__title{
-    position: relative;
-    margin-left: 37px;
-    font-size: 36px;
-    line-height: 36px;
     padding-bottom: 80px;
 
     &::before{
@@ -35,19 +38,39 @@
       left: -67px;
       top: 20px;
   }
-      &::after{
-        position: absolute;
-      content: "";
-      display: block;
-      background-color: #68b738;
+    &::after{
       width: 328px;
-      height: 2px;
-      right: -30px;
+      right: -70px;
       top: 20px;
     }
   }
 
   .extra-goods__list{
     display: grid;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .extra-goods__wrapper{
+    padding-bottom: 86px;
+  }
+
+  .extra-goods__title{
+
+    &::before{
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after{
+      width: 957px;
+      right: -110px;
+    }
+  }
+
+  .extra-goods__content-wrapper{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 80px;
   }
 }

@@ -1,6 +1,6 @@
 .form{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  font-size: 16px;
 }
 
 .form__title{
@@ -17,24 +17,46 @@
 }
 
 .form__program-selection{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+}
+
+.form__group{
+  border: none;
+  margin: 0;
+  padding: 0 0 11px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
+  .form{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .form__title{
-    padding: 39px 0 54px 40px
+    padding: 39px 0 54px 40px;
   }
 
   .form__descripton{
-    padding: 0;
-    margin-left: 40px;
-    font-size: 20px;
-    line-height: 30px;
-    width: 330px;
+    padding: 0 0 0 40px;
+    width: 370px;
   }
 
   .form__program-selection{
     padding: 66px 40px 72px;
   }
 }
+
+@media (min-width: $desktop-width){
+  .form__details-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .form__group{
+    padding: 0;
+    display: block;
+  }
+}
+

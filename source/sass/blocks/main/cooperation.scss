@@ -17,7 +17,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  width: 139px;
+  width: min-content;
 }
 
 .cooperation__address{
@@ -35,12 +35,12 @@
   .cooperation__wrapper{
     display: flex;
     justify-content: space-between;
+    padding: 56px 40px;
   }
 
   .cooperation__title{
     font-size: 20px;
     line-height: 26px;
-    width: 175px;
   }
 
   .cooperation__address{
@@ -50,5 +50,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .cooperation{
+    position: relative;
+  }
+
+  .cooperation__wrapper{
+    position: absolute;
+    width: min-content;
+    background-color: $white;
+    gap: 90px;
+    top: 95px;
+    padding: 62px 80px 58px;
+  }
+
+  .cooperation__address{
+    text-align: left;
   }
 }

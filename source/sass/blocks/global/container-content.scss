@@ -1,11 +1,11 @@
 .container-content{
-  min-width: 280px;
   margin: 0 20px;
+  min-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .container-content {
-    margin: 0 30px;
+    margin: 0 70px;
     width: auto;
   }
 }
@@ -13,6 +13,5 @@
 @media (min-width: $desktop-width) {
   .container-content {
     margin: 0 110px;
-    width: auto;
   }
 }

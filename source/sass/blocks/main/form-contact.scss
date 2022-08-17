@@ -1,14 +1,11 @@
 .form-contact{
   padding: 26px 0 23px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .form-contact__title{
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
   position: relative;
+  width: 100%;
 
     &::after{
       position: absolute;
@@ -30,7 +27,6 @@
 }
 
 .form-contact__item-name{
-  font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-gray;
 }
@@ -45,7 +41,6 @@
   flex-grow: 1;
   padding: 14px 40px 14px 15px;
   font: inherit;
-  font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-gray;
   border: none;
@@ -62,4 +57,61 @@
   position: absolute;
   right: 13px;
   top: 13px;
+}
+
+@media (min-width: $tablet-width){
+  .form-contact__title{
+
+      &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      left: -70px;
+      top: 20px;
+    }
+      &::after{
+        position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 145px;
+      height: 2px;
+      right: -70px;
+      top: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form-contact{
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
+
+  .form-contact__title{
+
+    &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 70px;
+    height: 2px;
+    left: -110px;
+    top: 20px;
+  }
+    &::after{
+      position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 778px;
+    height: 2px;
+    right: -110px;
+    top: 20px;
+  }
+}
 }

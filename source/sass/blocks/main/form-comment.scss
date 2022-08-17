@@ -3,9 +3,6 @@
 }
 
 .form-comment__title{
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
   padding-bottom: 38px;
   width: 100%;
   position: relative;
@@ -24,7 +21,6 @@
 
 .form-comment__message{
   font: inherit;
-  font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-gray;
   padding: 9px 12px 0 15px;
@@ -32,4 +28,60 @@
   outline: 1px solid $basic-gray-4;
   width: 100%;
   resize: none;
+}
+
+@media (min-width: $tablet-width){
+  .form-comment__title{
+
+      &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      left: -70px;
+      top: 20px;
+    }
+      &::after{
+        position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 478px;
+      height: 2px;
+      right: -70px;
+      top: 20px;
+    }
+  }
+
+  .form-comment__message{
+
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form-comment__title{
+
+    &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 70px;
+    height: 2px;
+    left: -110px;
+    top: 20px;
+  }
+    &::after{
+      position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 1108px;
+    height: 2px;
+    right: -110px;
+    top: 20px;
+  }
+}
 }

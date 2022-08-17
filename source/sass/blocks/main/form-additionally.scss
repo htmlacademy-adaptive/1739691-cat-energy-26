@@ -1,13 +1,10 @@
 .form-additionally{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
 }
 
 .form-additionally__title{
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  padding: 11px 0 34px;
+  padding: 0 0 34px;
   width: 100%;
   position: relative;
 
@@ -19,7 +16,7 @@
       width: 136px;
       height: 2px;
       right: -20px;
-      top: 25px;
+      top: 15px;
     }
 }
 
@@ -28,14 +25,11 @@
   margin: 0;
   list-style-type: none;
   padding-bottom: 34px;
-  display: flex;
-  flex-direction: column;
   gap: 12px;
 }
 
 .form-additionally__item{
   font: inherit;
-  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -45,4 +39,97 @@
 
 .form-additionally__control-label{
 
+}
+
+.form__item-wrapper{
+  display: grid;
+}
+
+.form__required-fields-text{
+  text-align: center;
+}
+
+@media (min-width: $tablet-width){
+  .form-additionally{
+
+   }
+
+  .form-additionally__title{
+
+      &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      left: -70px;
+      top: 20px;
+    }
+      &::after{
+        position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 446px;
+      height: 2px;
+      right: -70px;
+      top: 20px;
+    }
+  }
+
+  .form-additionally__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 61px;
+  }
+
+  .form__item-wrapper{
+    grid-template-columns: 1fr 1fr;
+    gap: 61px;
+  }
+
+  .form__button{
+    font-size: inherit;
+    margin-left: 1px;
+
+  }
+
+  .form__required-fields-text{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form-additionally__list{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form-additionally__title{
+
+    &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 70px;
+    height: 2px;
+    left: -110px;
+    top: 20px;
+  }
+    &::after{
+      position: absolute;
+    content: "";
+    display: block;
+    background-color: #68b738;
+    width: 1078px;
+    height: 2px;
+    right: -110px;
+    top: 20px;
+  }
+}
 }

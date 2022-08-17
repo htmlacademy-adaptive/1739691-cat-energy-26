@@ -1,8 +1,6 @@
 .details{
-  border: none;
-  margin: 0;
-  padding: 0 0 11px;
-  display: block;
+
+
 }
 
 .details__item{
@@ -12,7 +10,7 @@
 }
 
 .details__item-name{
-  font-size: 16px;
+
   color: $special-dark-gray;
   text-transform: uppercase;
   align-self: center;
@@ -21,8 +19,8 @@
 .details__item-text{
   flex-grow: 1;
   font-family: inherit;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: inherit;
+  line-height: inherit;
   color: $special-dark-gray;
   text-transform: uppercase;
   border: none;

@@ -1,8 +1,4 @@
 .special-offer{
-
-}
-
-.special-offer__content-wrapper{
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
                                     rgba(104, 183, 56, 0.85)),
                     url(../img/special-offer-background.jpg);
@@ -28,7 +24,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .special-offer__content-wrapper{
+  .special-offer{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     min-height: 200px;
