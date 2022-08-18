@@ -15,7 +15,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-header {
     position: static;
   }
@@ -26,10 +25,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .main-header-desktop-image {
     position: relative;
 
-    &::after{
+
+
+      &::after{
       content: "";
       position: absolute;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85),
@@ -39,7 +40,8 @@
       top: 0;
       height: 694px;
       width: 720px;
-    }
+      }
+
   }
 
   .main-header__wrapper{

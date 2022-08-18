@@ -69,12 +69,19 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+
+    &--white{
     color: $white;
     background-color: transparent;
+    }
   }
 
   .site-list__link {
-    color: $white;
+
+    &--white{
+      color: $white;
+    }
+
   }
 
   .site-list__item{
@@ -82,6 +89,19 @@
     line-height: 30px;
 
     &--current::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      right: 1px;
+      left: 1px;
+      background-color: $basic-green;
+    }
+  }
+
+  .site-list__item-white{
+    &::after{
       content: "";
       position: absolute;
       bottom: 0;

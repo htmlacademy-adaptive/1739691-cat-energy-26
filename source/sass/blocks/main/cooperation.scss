@@ -27,8 +27,10 @@
   width: 139px;
 }
 
-.cooperation__map{
+iframe{
   display: block;
+  border: none;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,6 +52,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  iframe{
+    min-height: 400px;
+    width: 100%;
   }
 }
 
