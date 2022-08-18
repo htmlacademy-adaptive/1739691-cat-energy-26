@@ -31,6 +31,7 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85),
                                       rgba(104, 183, 56, 0.85)),
                       url(../img/special-offer-background-tablet.jpg);
+    background-size: cover;
   }
 
   .special-offer__image-gift{
@@ -42,5 +43,28 @@
     width: 161px;
     margin: 0 0 0 70px;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .special-offer{
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+                                    rgba(104, 183, 56, 0.85)),
+                    url(../img/special-offer-background.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .special-offer__image-gift{
+    margin: 0;
+  }
+
+  .special-offer__description{
+    text-align: center;
+    width: 161px;
+    margin: 0;
   }
 }

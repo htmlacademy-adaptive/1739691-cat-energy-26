@@ -55,7 +55,6 @@
 
   .extra-goods-item__description{
     padding-bottom: 0;
-
     font-size: 16px;
     line-height: 20px;
   }
@@ -76,6 +75,26 @@
   .extra-goods-item {
     display: grid;
     grid-template-columns: 1fr 244px;
-    padding: 26px 0 28px;
+    padding: 15px 0 16px;
+    gap: 38px;
+    border-bottom: 1px solid $special-gray;
+  }
+
+  .extra-goods-item__content-wrapper{
+    align-items: center;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 163px;
+  }
+
+  .extra-goods-item__description{
+    min-width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra-goods-item__value{
+    margin: 0;
   }
 }

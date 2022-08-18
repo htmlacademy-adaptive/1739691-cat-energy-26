@@ -51,6 +51,11 @@
 }
 
 @media (min-width: $desktop-width){
+  .extra-goods__list{
+    outline: none;
+    border-top: 1px solid $special-gray;;
+  }
+
   .extra-goods__wrapper{
     padding-bottom: 86px;
   }

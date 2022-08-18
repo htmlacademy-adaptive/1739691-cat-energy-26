@@ -18,19 +18,59 @@
 }
 
 .features__item{
+  position: relative;
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 21px;
+  align-items: center;
 
-}
+    &::before{
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      display: block;
+    }
 
-.features__item::before{
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-color: $basic-green;
-  display: block;
-}
+    &--food{
+      &::after{
+        position: absolute;
+        content: url(../img/icon-food.svg);
+        top: 16px;
+        left: 18px;
+
+      }
+    }
+
+    &--cook{
+      &::after{
+        position: absolute;
+        content: url(../img/icon-cook.svg);
+        top: 13px;
+        left: 15px;
+
+      }
+    }
+
+    &--eat{
+      &::after{
+        position: absolute;
+        content: url(../img/icon-eat.svg);
+        top: 15px;
+        left: 18px;
+
+      }
+    }
+
+    &--result{
+      &::after{
+        position: absolute;
+        content: url(../img/icon-result.svg);
+        top: 13px;
+        left: 14px;
+      }
+    }
+  }
 
 .features__description{
   margin: 0;
@@ -56,7 +96,6 @@
     padding: 40px 0 57px;
     margin-right: 76px;
     gap: 31px;
-    position: relative;
   }
 
   .features__item::before{
@@ -81,5 +120,16 @@
     line-height: 24px;
     padding: 0;
     z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px;
+  }
+
+  .features__item{
+    margin-right: 0;
   }
 }
