@@ -19,58 +19,75 @@
 
 .features__item{
   position: relative;
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 21px;
-  align-items: center;
+  display: flex;
+  gap: 20px;
 
-    &::before{
-      content: "";
-      width: 60px;
-      height: 60px;
-      background-color: $basic-green;
-      display: block;
-    }
+
+  }
+
+.features__square{
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $basic-green;
+  display: block;
+  position: relative;
 
     &--food{
-      &::after{
+      &::before{
         position: absolute;
         content: url(../img/icon-food.svg);
-        top: 16px;
-        left: 18px;
-
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-    }
+  }
 
-    &--cook{
-      &::after{
-        position: absolute;
-        content: url(../img/icon-cook.svg);
-        top: 13px;
-        left: 15px;
-
-      }
-    }
-
-    &--eat{
-      &::after{
-        position: absolute;
-        content: url(../img/icon-eat.svg);
-        top: 15px;
-        left: 18px;
-
-      }
-    }
-
-    &--result{
-      &::after{
-        position: absolute;
-        content: url(../img/icon-result.svg);
-        top: 13px;
-        left: 14px;
-      }
+  &--cook{
+    &::before{
+      position: absolute;
+      content: url(../img/icon-cook.svg);
+      left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   }
+
+  &--eat{
+    &::before{
+      position: absolute;
+      content: url(../img/icon-eat.svg);
+      left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  &--result{
+    &::before{
+      position: absolute;
+      content: url(../img/icon-result.svg);
+      left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+}
 
 .features__description{
   margin: 0;
@@ -96,11 +113,22 @@
     padding: 40px 0 57px;
     margin-right: 76px;
     gap: 31px;
-  }
 
-  .features__item::before{
-    width: 80px;
-    height: 80px;
+      &--food{
+        max-width: 230px;
+      }
+
+      &--cook{
+        max-width: 246px;
+      }
+
+      &--eat{
+        max-width: 247px;
+      }
+
+      &--result{
+        max-width: 249px;
+      }
   }
 
   .features__item::after{
@@ -113,6 +141,11 @@
     color: $basic-gray;
     right: 0;
     top: 0;
+  }
+
+  .features__square{
+    min-width: 80px;
+    min-height: 80px;
   }
 
   .features__description{
