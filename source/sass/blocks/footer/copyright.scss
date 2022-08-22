@@ -1,16 +1,16 @@
-.copyright{
+.copyright {
   display: flex;
   justify-content: space-between;
+}
 
-    &__text{
-      align-self: center;
-      font-family: Arial;
-      font-size: 16px;
-      font-weight: 400;
-      color: #444444;
-    }
+.copyright__text {
+  align-self: center;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  color: $special-dark-gray;
+}
 
-    &__link{
-      line-height: 0;
-    }
+.copyright__link {
+  line-height: 0;
 }

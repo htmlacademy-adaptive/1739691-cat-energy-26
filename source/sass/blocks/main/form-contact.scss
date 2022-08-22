@@ -1,54 +1,112 @@
 .form-contact{
   padding: 26px 0 23px;
+  display: grid;
+}
+
+.form-contact__title{
+  position: relative;
+  width: 100%;
+
+    &::after{
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      width: 99px;
+      height: 2px;
+      right: -20px;
+      top: 15px;
+    }
+}
+
+.form-contact__item{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 14px;
+}
 
-    &__title{
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 26px;
+.form-contact__item-name{
+  text-transform: uppercase;
+  color: $special-dark-gray;
+}
+
+.form-contact__item-wrapper{
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-contact__input-detail{
+  flex-grow: 1;
+  padding: 14px 40px 14px 15px;
+  font: inherit;
+  text-transform: uppercase;
+  color: $special-dark-gray;
+  border: none;
+  outline: 1px solid $special-gray;
+}
+
+.form-contact__email-logo{
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+
+.form-contact__phone-logo{
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+@media (min-width: $tablet-width){
+  .form-contact__title{
+
+      &::before{
+        position: absolute;
+        content: "";
+        background-color: $basic-green;
+        width: 30px;
+        height: 2px;
+        left: -70px;
+        top: 20px;
     }
-
-    &__item{
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding-bottom: 14px;
+      &::after{
+        position: absolute;
+        content: "";
+        background-color: $basic-green;
+        width: 145px;
+        height: 2px;
+        right: -70px;
+        top: 20px;
     }
+  }
+}
 
-    &__item-name{
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #444444;
-    }
+@media (min-width: $desktop-width){
+  .form-contact{
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
 
-    &__item-wrapper{
-      position: relative;
-      display: flex;
-      flex-grow: 1;
-    }
+  .form-contact__title{
 
-    &__input-detail{
-      flex-grow: 1;
-      padding: 14px 40px 14px 15px;
-      font: inherit;
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #444444;
-      border: none;
-      outline: 1px solid #CDCDCD;
-    }
-
-    &__email-logo{
+    &::before{
       position: absolute;
-      right: 15px;
-      top: 17px;
+      content: "";
+      background-color: $basic-green;
+      width: 70px;
+      height: 2px;
+      left: -110px;
+      top: 20px;
     }
-
-    &__phone-logo{
+    &::after{
       position: absolute;
-      right: 13px;
-      top: 13px;
+      content: "";
+      background-color: $basic-green;
+      width: 778px;
+      height: 2px;
+      right: -110px;
+      top: 20px;
     }
-
+  }
 }

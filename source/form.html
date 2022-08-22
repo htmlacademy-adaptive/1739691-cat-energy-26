@@ -25,75 +25,74 @@
           </span>
           <img src="img/logo-burger.svg" width="24" height="18" alt="">
         </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item ">
-              <a>Подбор программы</a>
+              <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   </header>
 
-  <main class="main-form">
+  <main class="main">
     <section class="form container-content">
-      <h1 class="form__title">Подбор программы</h1>
+      <h1 class="form__title page-title">Подбор программы</h1>
       <p class="form__descripton">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="form__program-selection" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group details">
-          <legend class="visually-hidden">Кошачьи данные</legend>
-          <div class="form__item">
-            <label class="form__item-name" for="form-name">Имя:*</label>
-            <input class="form__item-text" type="text" name="form-name" id="form-name" placeholder="Барсик" required>
-          </div>
-          <div class="form__item">
-            <label class="form__item-name" for="form-weight">Вес (кг):*</label>
-            <input class="form__item-text" type="number" name="form-weight" id="form-weight" placeholder="7" required>
-          </div>
-          <div class="form__item">
-            <label class="form__item-name" for="form-age">Возраст (лет):</label>
-            <input class="form__item-text" type="number" name="form-age" id="form-age" placeholder="7">
-          </div>
-        </fieldset>
+        <div class="form__details-wrapper">
+          <fieldset class="form__group details">
+            <legend class="visually-hidden">Кошачьи данные</legend>
+            <div class="details__item">
+              <label class="details__item-name" for="details-name">Имя:*</label>
+              <input class="details__item-text" type="text" name="details-name" id="form-name" placeholder="Барсик" required>
+            </div>
+            <div class="details__item">
+              <label class="details__item-name" for="details-weight">Вес (кг):*</label>
+              <input class="details__item-text" type="number" name="details-weight" id="details-weight" placeholder="7" required>
+            </div>
+            <div class="details__item">
+              <label class="details__item-name" for="details-age">Возраст (лет):</label>
+              <input class="details__item-text" type="number" name="details-age" id="details-age" placeholder="7">
+            </div>
+          </fieldset>
 
-        <fieldset class="form__group program-type">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="program-type__list">
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program" checked>
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Похудение</span>
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program">
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Набор массы</span>
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__control">
-                <input class="program-type__control-input" type="radio" name="program">
-                <span class="program-type__control-mark-radio"></span>
-                <span class="program-type__control-label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
+          <fieldset class="form__group program-type">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="program-type__list">
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program" checked>
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Похудение</span>
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program">
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__control">
+                  <input class="program-type__control-input" type="radio" name="program">
+                  <span class="program-type__control-mark-radio"></span>
+                  <span class="program-type__control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__group form-contact">
-          <legend class="form-contact__title">Контактные данные (владельца кота)</legend>
+          <legend class="form-contact__title section-title">Контактные данные (владельца кота)</legend>
           <div class="form-contact__item">
             <label class="form-contact__item-name" for="email">E-mail:*</label>
             <div class="form-contact__item-wrapper item-wrapper">
@@ -130,13 +129,13 @@
         </fieldset>
 
         <fieldset class="form__group form-comment">
-          <legend class="form-comment__title">Комментарий</legend>
-          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="10"
+          <legend class="form-comment__title section-title">Комментарий</legend>
+          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="8"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__group form-additionally">
-          <legend class="form-additionally__title">Дополнительно</legend>
+          <legend class="form-additionally__title section-title">Дополнительно</legend>
           <ul class="form-additionally__list">
             <li class="form-additionally__item">
               <label class="form-additionally__control">
@@ -166,23 +165,28 @@
                 <span class="form-additionally__control-label">Витамины</span>
               </label>
             </li>
+
           </ul>
 
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <div class="form__item-wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
 
-          <p class="form__required-fields-text">* — Обязательные поля</p>
+            <p class="form__required-fields-text">* — Обязательные поля</p>
+          </div>
         </fieldset>
       </form>
     </section>
 
     <section class="cooperation cooperation--gray">
       <div class="cooperation__wrapper container-content">
-        <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="cooperation__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__city">Санкт-Петербург</span></p>
       </div>
       <div class="cooperation__map-wrapper">
-        <img class="cooperation__map" src="img/location.jpg" width="320" height="362"
-          alt="Расположение магазина на карте">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.254739502559!2d30.321884639882988!3d59.938546600764305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1660850615077!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

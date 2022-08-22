@@ -1,9 +1,16 @@
-.main-nav{
+.main-nav {
 
-    &__toggle{
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-        }
 }
 
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle{
+    display: none;
+  }
+
+}

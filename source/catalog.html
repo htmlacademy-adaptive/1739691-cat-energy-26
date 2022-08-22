@@ -25,29 +25,26 @@
           </span>
           <img src="img/logo-burger.svg" width="24" height="18" alt="">
         </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a>Каталог продукции</a>
+              <a class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item ">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   </header>
 
-  <main class="main-catalog">
+  <main class="main">
     <section class="catalog">
       <div class="catalog-wrapper container-content">
-        <h1 class="catalog__title section-title">Каталог продукции</h1>
+        <h1 class="catalog__title page-title">Каталог продукции</h1>
         <ul class="catalog__list">
-
           <li class="catalog__item card">
             <div class="card__content-wrapper">
               <div class="card__image-wrapper">
@@ -203,72 +200,82 @@
           </li>
 
           <li class="catalog__item card card-show-more">
-            <img class="card-show-more__image" src="img/show-more.svg" width="30" height="30"
-              alt="Показать больше товаров">
-            <h2 class="card-show-more__title">Показать еще 100500 товаров</h2>
-            <p class="card-show-more__description">На самом деле вкусов гораздо больше!</p>
+            <div class="card__info-wrapper">
+              <img class="card-show-more__image" src="img/show-more.svg" width="30" height="30"
+                alt="Показать больше товаров">
+              <h2 class="card-show-more__title">Показать еще 100500 товаров</h2>
+              <p class="card-show-more__description">На самом деле вкусов гораздо больше!</p>
+            </div>
             <button class="card-show-more__button button button--gray" type="button">показать все</button>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="extra-goods">
-      <div class="extra-goods__wrapper container-content">
-        <h2 class="extra-goods__title">Дополнительные товары</h2>
-        <ul class="extra-goods__list">
-          <li class="extra-goods__item extra-goods-item">
-            <h3 class="extra-goods-item__title">Сахарозаменитель</h3>
-            <p class="extra-goods-item__description">1 упаковка (100 г)
-              <span class="extra-goods-item__value">200 Р.</span>
-            </p>
-            <button class="extra-goods-item__button button" type="button">Заказать</button>
-          </li>
+      <section class="extra-goods">
+        <div class="extra-goods__wrapper container-content">
+          <h2 class="extra-goods__title section-title">Дополнительные товары</h2>
+          <div class="extra-goods__content-wrapper">
+            <ul class="extra-goods__list">
+              <li class="extra-goods__item extra-goods-item">
+                <div class="extra-goods-item__content-wrapper">
+                  <h3 class="extra-goods-item__title">Сахарозаменитель</h3>
+                  <p class="extra-goods-item__description">1 упаковка (100 г)
+                    <span class="extra-goods-item__value">200 Р.</span>
+                  </p>
+                </div>
+                <button class="extra-goods-item__button button" type="button">Заказать</button>
+              </li>
 
-          <li class="catalog__extra-goods-item extra-goods-item">
-            <h3 class="extra-goods-item__title">Питьевая вода</h3>
-            <p class="extra-goods-item__description">5 литров
-              <span class="extra-goods-item__value">50 Р.</span>
-            </p>
-            <button class="extra-goods-item__button button" type="button">Заказать</button>
-          </li>
+              <li class="extra-goods__item extra-goods-item">
+                <div class="extra-goods-item__content-wrapper">
+                <h3 class="extra-goods-item__title">Питьевая вода</h3>
+                <p class="extra-goods-item__description">5 литров
+                  <span class="extra-goods-item__value">50 Р.</span>
+                </p>
+              </div>
+                <button class="extra-goods-item__button button" type="button">Заказать</button>
+              </li>
 
-          <li class="catalog__extra-goods-item extra-goods-item">
-            <h3 class="extra-goods-item__title">Молоко</h3>
-            <p class="extra-goods-item__description">1 литр
-              <span class="extra-goods-item__value">100 Р.</span>
-            </p>
-            <button class="extra-goods-item__button button" type="button">Заказать</button>
-          </li>
+              <li class="extra-goods__item extra-goods-item">
+                <div class="extra-goods-item__content-wrapper">
+                <h3 class="extra-goods-item__title">Молоко</h3>
+                <p class="extra-goods-item__description">1 литр
+                  <span class="extra-goods-item__value">100 Р.</span>
+                </p>
+              </div>
+                <button class="extra-goods-item__button button" type="button">Заказать</button>
+              </li>
 
-          <li class="catalog__extra-goods-item extra-goods-item">
-            <h3 class="extra-goods-item__title">Витамины</h3>
-            <p class="extra-goods-item__description">1 упаковка (30 г)
-              <span class="extra-goods-item__value">300 Р.</span>
-            </p>
-            <button class="extra-goods-item__button button" type="button">Заказать</button>
-          </li>
-        </ul>
-    </section>
-
-    <section class="special-offer container-content">
-      <div class="special-offer__content-wrapper">
-        <img class="special-offer__image-gift" src="./img/special-offer.svg" width="78" height="80"
-          alt="Логотип подарка">
-        <p class="special-offer__description">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
-    </section>
-
-
+              <li class="extra-goods__item extra-goods-item">
+                <div class="extra-goods-item__content-wrapper">
+                <h3 class="extra-goods-item__title">Витамины</h3>
+                <p class="extra-goods-item__description">1 упаковка (30 г)
+                  <span class="extra-goods-item__value">300 Р.</span>
+                </p>
+              </div>
+                <button class="extra-goods-item__button button" type="button">Заказать</button>
+              </li>
+            </ul>
+            <div class="special-offer">
+              <img class="special-offer__image-gift" src="./img/special-offer.svg" width="78" height="80"
+                alt="Логотип подарка">
+              <p class="special-offer__description">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section class="cooperation cooperation--gray">
       <div class="cooperation__wrapper container-content">
-        <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="cooperation__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__city">Санкт-Петербург</span></p>
       </div>
       <div class="cooperation__map-wrapper">
-        <img class="cooperation__map" src="img/location.jpg" width="320" height="362"
-          alt="Расположение магазина на карте">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.254739502559!2d30.321884639882988!3d59.938546600764305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1660850615077!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

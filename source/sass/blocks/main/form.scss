@@ -1,62 +1,75 @@
 .form{
-  display: flex;
-  flex-direction: column;
-
-    &__title{
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 36px;
-      margin: 0;
-      padding: 27px 0 37px;
-    }
-
-    &__descripton{
-      text-transform: uppercase;
-      padding-right: 54px;
-      margin: 0;
-      padding-bottom: 39px;
-    }
-
-    &__program-selection{
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__group{
-      border: none;
-      margin: 0;
-      padding: 0 0 11px;
-      display: block;
-    }
-
-    &__item{
-      display: flex;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-
-    &__item-name{
-      font-size: 16px;
-      color: #444444;
-      text-transform: uppercase;
-      align-self: center;
-    }
-
-    &__item-text{
-      flex-grow: 1;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 18px;
-      color: #444444;
-      text-transform: uppercase;
-      border: none;
-      outline: 1px solid #E7E7E7;
-      padding: 12px 0 13px 15px;
-    }
-
-    &__required-fields-text{
-      text-align: center;
-      margin: 0;
-      padding: 21px 0 32px;
-    }
+  display: grid;
+  font-size: 16px;
 }
+
+.form__title{
+  font-weight: 400;
+  margin: 0;
+  padding: 27px 0 37px;
+}
+
+.form__descripton{
+  text-transform: uppercase;
+  padding-right: 54px;
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+.form__program-selection{
+  display: grid;
+}
+
+.form__group{
+  border: none;
+  margin: 0;
+  padding: 0 0 11px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .form{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__title{
+    padding: 39px 0 54px 40px;
+  }
+
+  .form__descripton{
+    padding: 0 0 0 40px;
+    width: 370px;
+  }
+
+  .form__program-selection{
+    padding: 66px 40px 72px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form__title{
+    padding: 39px 0 54px;
+  }
+
+  .form__descripton{
+    padding: 0;
+    width: 370px;
+  }
+
+  .form__program-selection{
+    padding: 66px 0 72px;
+  }
+
+  .form__details-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .form__group{
+    padding: 0;
+    display: block;
+  }
+}
+

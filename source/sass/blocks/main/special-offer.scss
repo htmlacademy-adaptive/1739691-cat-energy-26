@@ -1,29 +1,70 @@
 .special-offer{
-
-    &__content-wrapper{
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
                                     rgba(104, 183, 56, 0.85)),
                     url(../img/special-offer-background.jpg);
-      background-repeat: no-repeat;
-      height: 290px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 35px 0;
-    }
+  background-repeat: no-repeat;
+  min-height: 290px;
+  display: grid;
+  margin: 35px 0;
+}
 
-    &__image-gift{
-      margin-top: 59px;
-    }
+.special-offer__image-gift{
+  margin: 59px auto 0;
+}
 
-    &__description{
-      font-family: 'Arial';
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #FFFFFF;
-      text-align: center;
-      margin: 0;
-      padding: 48px 61px 0 58px;
-    }
+.special-offer__description{
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  margin: 0;
+  padding: 0 61px 0 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+                                      rgba(104, 183, 56, 0.85)),
+                      url(../img/special-offer-background-tablet.jpg);
+    background-size: cover;
+  }
+
+  .special-offer__image-gift{
+    margin: 0 0 0 77px;
+  }
+
+  .special-offer__description{
+    text-align: left;
+    width: 161px;
+    margin: 0 0 0 70px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .special-offer{
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+                                    rgba(104, 183, 56, 0.85)),
+                    url(../img/special-offer-background.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .special-offer__image-gift{
+    margin: 0;
+  }
+
+  .special-offer__description{
+    text-align: center;
+    width: 161px;
+    margin: 0;
+  }
 }

@@ -1,36 +1,40 @@
-@use "./page.scss";
-@use "./fonts.scss";
-@use "./visually-hidden.scss";
-@use "./container.scss";
-@use "./variables.scss";
 
-@use "./blocks/button.scss";
-@use "./blocks/section-title.scss";
-@use "./blocks/global/container-content.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./visually-hidden.scss";
+@import "./page.scss";
+
+@import "./blocks/button.scss";
+@import "./blocks/page-title.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/global/container-content.scss";
 
 
-@use "./blocks/header/main-header.scss";
-@use "./blocks/header/main-nav.scss";
-@use "./blocks/header/site-list.scss";
+@import "./blocks/header/main-header.scss";
+@import "./blocks/header/main-nav.scss";
+@import "./blocks/header/main-nav-wrapper.scss";
+@import "./blocks/header/site-list.scss";
 
-@use "./blocks/main/search-form.scss";
-@use "./blocks/main/programs.scss";
-@use "./blocks/main/features.scss";
-@use "./blocks/main/example.scss";
-@use "./blocks/main/stats-list.scss";
-@use "./blocks/main/cooperation.scss";
-@use "./blocks/main/catalog.scss";
-@use "./blocks/main/card.scss";
-@use "./blocks/main/card-show-more.scss";
-@use "./blocks/main/extra-goods.scss";
-@use "./blocks/main/extra-goods-item.scss";
-@use "./blocks/main/special-offer.scss";
-@use "./blocks/main/form.scss";
-@use "./blocks/main/program-type.scss";
-@use "./blocks/main/form-contact.scss";
-@use "./blocks/main/form-comment.scss";
-@use "./blocks/main/form-additionally.scss";
+@import "./blocks/main/main.scss";
+@import "./blocks/main/search-form.scss";
+@import "./blocks/main/programs.scss";
+@import "./blocks/main/features.scss";
+@import "./blocks/main/example.scss";
+@import "./blocks/main/stats-list.scss";
+@import "./blocks/main/cooperation.scss";
+@import "./blocks/main/catalog.scss";
+@import "./blocks/main/card.scss";
+@import "./blocks/main/card-show-more.scss";
+@import "./blocks/main/extra-goods.scss";
+@import "./blocks/main/extra-goods-item.scss";
+@import "./blocks/main/special-offer.scss";
+@import "./blocks/main/form.scss";
+@import "./blocks/main/program-type.scss";
+@import "./blocks/main/form-contact.scss";
+@import "./blocks/main/form-comment.scss";
+@import "./blocks/main/form-additionally.scss";
+@import "./blocks/main/details.scss";
 
-@use "./blocks/footer/main-footer.scss";
-@use "./blocks/footer/social-list.scss";
-@use "./blocks/footer/copyright.scss";
+@import "./blocks/footer/main-footer.scss";
+@import "./blocks/footer/social-list.scss";
+@import "./blocks/footer/copyright.scss";
