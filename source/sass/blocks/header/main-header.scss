@@ -6,11 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px 0 15px;
+  padding: 18px 0 17px;
   align-items: center;
 }
 
-.main-header__logo {
+.main-header__logo-image {
   display: block;
 }
 
@@ -27,8 +27,6 @@
 @media (min-width: $desktop-width) {
   .main-header-desktop-image {
     position: relative;
-
-
 
       &::after{
       content: "";
