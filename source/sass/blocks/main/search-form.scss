@@ -26,7 +26,6 @@
 .search-form__image{
   display: block;
   margin: 0 auto;
-  width: 100%;
 }
 
 .search-form__button {
@@ -58,14 +57,8 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 0 80px;
+    padding: 0 0 20px 80px;
     text-align: start;
-  }
-
-  .search-form__image{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
   }
 
   .search-form__button{
@@ -83,35 +76,27 @@
 @media (min-width: $desktop-width) {
 
   .search-form__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title img"
-                         "subtitle img"
-                         "button img";
-    padding-bottom: 48px;
+    min-height: 555px;
   }
 
   .search-form__title{
     padding: 109px 0 41px 80px;
-    grid-area: title;
   }
 
   .search-form__subtitle{
     margin: 0;
-    grid-area: subtitle;
   }
 
   .search-form__button{
-    top: 52px;
-    grid-area: button;
+    bottom: 160px;
+    top: auto;
   }
 
   .search-form__image{
-    width: 552px;
-    height: 499px;
+    position: absolute;
+    right: 0;
+    top: 0;
     margin: 0;
-    transform: translateX(-162px);
-    grid-area: img;
-    z-index: 1;
+    transform: translateX(-220px);
   }
 }

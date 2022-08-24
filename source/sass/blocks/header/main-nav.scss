@@ -1,18 +1,23 @@
-.main-nav {
-  z-index: 1;
-}
+.main-nav{
+  &--closed .main-nav__list {
+    display: none;
+  }
 
-.main-nav-wrapper{
-
+  &--nojs .main-nav__list {
+    display: block;
+    position: static;
+  }
 }
 
 .main-nav__toggle{
+  position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  right: 20px;
+  top: 22px;
   min-width: 24px;
   min-height: 24px;
-  display: block;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -20,8 +25,8 @@
   content: "";
   width: 24px;
   height: 2px;
-  top: 26px;
-  right: 20px;
+  top: 2px;
+  right: 0;
   background-color: $black;
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 
@@ -34,19 +39,13 @@
   }
 }
 
-@media (max-width: $mobile-width-only){
-  .main-nav--closed .main-nav__list {
-    display: none;
-  }
-}
-
 .main-nav--opened .main-nav__toggle{
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 35px;
-    right: 20px;
+    top: 10px;
+    right: 0;
     width: 24px;
     height: 2px;
     background-color: $black;
@@ -71,13 +70,9 @@
   }
 }
 
-// .main-nav--nojs .main-nav__toggle{
-//   display: none;
-// }
-
-// .main-nav--nojs .main-nav__list{
-//   display: block;
-// }
+.main-nav--nojs .main-nav__toggle{
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle{
@@ -86,5 +81,11 @@
 
   .main-nav--closed .main-nav__list {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav{
+    z-index: 1;
   }
 }

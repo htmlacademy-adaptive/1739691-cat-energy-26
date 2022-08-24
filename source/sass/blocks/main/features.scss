@@ -14,16 +14,13 @@
   grid-template-columns: 1fr;
   gap: 20px;
   padding-bottom: 49px;
-
 }
 
 .features__item{
   position: relative;
   display: flex;
   gap: 20px;
-
-
-  }
+}
 
 .features__square{
   min-width: 60px;
@@ -160,6 +157,7 @@
   .features__list{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 94px;
+    padding-bottom: 70px;
   }
 
   .features__item{

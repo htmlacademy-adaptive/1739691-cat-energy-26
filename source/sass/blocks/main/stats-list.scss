@@ -10,7 +10,6 @@
   outline: 1px solid $special-gray;
   border-radius: 3px;
   position: relative;
-
 }
 
 .stats-list__number{
@@ -38,6 +37,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .stats-list__item{
+    margin: 0;
+  }
+
   .stats-list__number{
     font-size: 30px;
     line-height: 37px;
@@ -49,5 +52,15 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats-list{
+    gap: 42px;
+  }
+
+  .stats-list__description{
+    background-color: $basic-gray-3;
   }
 }

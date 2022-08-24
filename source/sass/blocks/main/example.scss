@@ -58,12 +58,10 @@
 .image-cat-before{
   z-index: 2;
   width: 140px;
-  // background-image: url(../img/cat-example-before@1x.jpg);
 }
 
 .image-cat-after{
   z-index: 1;
-  // background-image: url(../img/cat-example-after@1x.jpg);
 }
 
 .example__range-scale-bar{
@@ -92,13 +90,24 @@
 
 .example__range-scale-button{
   position: absolute;
+  background-color: transparent;
+  border: none;
   top: calc(50% - 9px);
   left: calc(50% - 12px);
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .example{
     background-color: $white;
+  }
+
+  .example__wrapper{
+    padding-bottom: 0;
+  }
+
+  .example__content-wrapper{
+    margin-bottom: 151px;
   }
 
   .example__title{
@@ -115,9 +124,11 @@
   .example__stats-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 104px;
   }
 
   .example__costs{
+    margin: 0;
     text-align: right;
     font-size: 20px;
     display: flex;
@@ -125,13 +136,14 @@
     justify-content: center;
   }
 
-  .example__range-slider{
-
-    min-width: 560px;
-    min-height: 512px;
+  .example__range-slider-wrapper{
+    height: 462px;
   }
 
-  .example__image-wrapper{
+  .example__range-slider{
+    min-width: 560px;
+    min-height: 512px;
+    transform: translateY(-151px);
   }
 
   .example__image{
@@ -146,5 +158,69 @@
 
   .image-cat-after{
     z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example{
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        height: 463px;
+        width: 100%;
+        background-color: $basic-gray-3;
+        bottom: 0;
+      }
+  }
+
+  .example__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .example__content-wrapper{
+    margin-bottom: 0;
+    padding-right: 64px;
+    z-index: 1;
+  }
+
+  .example__title{
+    padding-top: 0;
+    margin-bottom: 76px;
+  }
+
+  .example__description{
+    margin: 0 0 69px;
+    padding-top: 70px;
+  }
+
+  .example__stats-wrapper{
+    display: grid;
+    grid-template-columns: unset;
+    padding-bottom: 75px;
+  }
+
+  .example__stats{
+    margin: 0 70px 60px 0;
+  }
+
+  .example__costs{
+    text-align: left;
+    flex-direction: row;
+    justify-content: start;
+    gap: 63px;
+  }
+
+  .example__range-slider-wrapper{
+    height: 512px;
+    justify-content: end;
+    padding-right: 110px;
+    background-color: $white;
+  }
+
+  .example__range-slider{
+    transform: unset;
   }
 }
