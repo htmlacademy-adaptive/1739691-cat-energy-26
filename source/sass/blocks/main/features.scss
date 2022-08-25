@@ -1,12 +1,10 @@
-.features{
+.features {}
 
-}
-
-.features__title{
+.features__title {
   padding: 20px 0 40px;
 }
 
-.features__list{
+.features__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -16,77 +14,77 @@
   padding-bottom: 49px;
 }
 
-.features__item{
+.features__item {
   position: relative;
   display: flex;
   gap: 20px;
 }
 
-.features__square{
+.features__square {
   min-width: 60px;
   min-height: 60px;
   background-color: $basic-green;
   display: block;
   position: relative;
 
-    &--food{
-      &::before{
-        position: absolute;
-        content: url(../img/icon-food.svg);
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+  &--food {
+    &::before {
+      position: absolute;
+      content: url(../img/icon-food.svg);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &--cook{
-    &::before{
+  &--cook {
+    &::before {
       position: absolute;
       content: url(../img/icon-cook.svg);
       left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  &--eat{
-    &::before{
+  &--eat {
+    &::before {
       position: absolute;
       content: url(../img/icon-eat.svg);
       left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  &--result{
-    &::before{
+  &--result {
+    &::before {
       position: absolute;
       content: url(../img/icon-result.svg);
       left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
-.features__description{
+.features__description {
   margin: 0;
   color: $special-dark-gray;
   padding: 2px 0 4px;
@@ -94,41 +92,41 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features{
+  .features {
     border-bottom: 1px solid $border-gray-2;
   }
 
-  .features__list{
+  .features__list {
     grid-template-columns: 1fr 1fr;
     gap: 37px 65px;
     counter-reset: features-counter;
   }
 
-  .features__item{
+  .features__item {
     display: flex;
     flex-wrap: wrap;
     padding: 40px 0 57px;
     margin-right: 76px;
     gap: 31px;
 
-      &--food{
-        max-width: 230px;
-      }
+    &--food {
+      max-width: 230px;
+    }
 
-      &--cook{
-        max-width: 246px;
-      }
+    &--cook {
+      max-width: 246px;
+    }
 
-      &--eat{
-        max-width: 247px;
-      }
+    &--eat {
+      max-width: 247px;
+    }
 
-      &--result{
-        max-width: 249px;
-      }
+    &--result {
+      max-width: 249px;
+    }
   }
 
-  .features__item::after{
+  .features__item::after {
     counter-increment: features-counter;
     content: counter(features-counter);
     position: absolute;
@@ -140,12 +138,12 @@
     top: 0;
   }
 
-  .features__square{
+  .features__square {
     min-width: 80px;
     min-height: 80px;
   }
 
-  .features__description{
+  .features__description {
     font-size: 16px;
     line-height: 24px;
     padding: 0;
@@ -154,13 +152,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features__list{
+  .features {
+    border-bottom: none;
+  }
+
+  .features__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 94px;
     padding-bottom: 70px;
   }
 
-  .features__item{
+  .features__item {
     margin-right: 0;
   }
 }

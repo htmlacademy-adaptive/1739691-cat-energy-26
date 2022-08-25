@@ -15,18 +15,17 @@
   background-color: $white;
 }
 
-  @media (min-width: $tablet-width) {
-    .page__body {
-      min-width: $tablet-width;
-    }
+@media (min-width: $tablet-width) {
+  .page__body {
+    min-width: $tablet-width;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .page__body {
-      min-width: $desktop-width;
-    }
+@media (min-width: $desktop-width) {
+  .page__body {
+    min-width: $desktop-width;
   }
-
+}
 
 *,
 *::before,
@@ -37,4 +36,5 @@
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
