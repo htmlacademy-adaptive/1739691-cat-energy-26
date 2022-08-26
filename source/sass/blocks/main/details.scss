@@ -25,6 +25,14 @@
   border: none;
   outline: 1px solid $basic-gray-4;
   padding: 12px 0 13px 15px;
+
+    &:hover{
+      outline: 1px solid $special-gray;
+    }
+
+    &:active{
+      outline: 2px solid $special-dark-gray;
+    }
 }
 
 .details__required-fields-text{

@@ -12,6 +12,14 @@
   text-align: center;
   padding-bottom: 31px;
   border-bottom: 1px solid $border-gray;
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+    &:active{
+      opacity: 0.68;
+    }
 }
 
 .main-footer__copyright {

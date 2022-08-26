@@ -18,6 +18,10 @@
   position: relative;
   display: block;
   padding: 6px 0 6px 45px;
+
+    &:hover > .program-type__control-mark-radio{
+      border: 1px solid $border-gray-3;
+    }
 }
 
 .program-type__control-input:checked + .program-type__control-mark-radio::before{

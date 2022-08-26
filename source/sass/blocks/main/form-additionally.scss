@@ -40,7 +40,13 @@
   padding: 5px 0 7px 46px
 }
 
-.form-additionally__control-input:checked + .form-additionally__control-mark-checkbox::before{
+.form-additionally__control{
+  &:hover > .form-additionally__control-mark-checkbox{
+    border: 1px solid $border-gray-3;
+  }
+}
+
+.form-additionally__control-input:checked ~ .form-additionally__control-mark-checkbox::before{
   position: absolute;
   content: url(../img/checkbox-checked.svg);
   left: calc(50% - 9px);
