@@ -12,20 +12,24 @@
   <header class="main-header main-header-desktop-image">
     <div class="main-header__wrapper container-content">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
+            alt="Логотип Кэт энерджи">
+        </picture>
       </a>
       <a class="main-header__logo-secondary" href="index.html">
         <img class="main-header__logo-image" src="img/logo-mobile-secondary.svg" width="101" height="18"
           alt="Кэт энерджи">
       </a>
-      <div class="main-nav-wrapper">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-            <img src="img/logo-burger.svg" width="24" height="18" alt="">
-          </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <div class="main-nav-wrapper">
           <ul class="main-nav__list site-list site-list--white">
             <li class="site-list__item site-list__item--current site-list__item-white">
               <a class="site-list__link site-list__link--white">Главная</a>
@@ -37,8 +41,8 @@
               <a class="site-list__link site-list__link--white" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -51,8 +55,13 @@
         <p class="search-form__subtitle">
           Занялся собой? Займись котом!
         </p>
-        <img class="search-form__image" src="img/index-can-mobile.png" width="280" height="270"
-          alt="Банка кошачьей еды">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png" width="709" height="609">
+          <img class="search-form__image" src="img/index-can-mobile.png" width="280" height="270"
+            alt="Банка кошачьей еды">
+        </picture>
+
         <a class="search-form__button button" href="form.html">подобрать программу</a>
       </div>
     </section>
@@ -114,8 +123,8 @@
     </section>
 
     <section class="example">
-      <div class="example__wrapper container-content">
-        <div class="example__content-wrapper">
+      <div class="example__wrapper">
+        <div class="example__content-wrapper container-content">
           <h2 class="example__title page-title"> Живой пример </h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -136,19 +145,32 @@
             <p class="example__costs">Затраты на питание: <span class="example__amount">15 000 РУБ.</span> </p>
           </div>
         </div>
-        <div class="example__range">
-          <img src="img/cat-example-before.jpg" width="280" height="232" alt="толстый кот">
-          <img src="img/cat-example-after.jpg" width="243" height="232" alt="худой кот">
+        <div class="example__range-slider-wrapper">
+          <div class="example__range-slider">
+            <div class="example__image-wrapper image-cat-before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-example-before@2x.png" width="560" height="512">
+                <img class="example__image example__image--before" src="img/cat-example-before@1x.png" width="280"
+                  height="256" alt="толстый кот">
+              </picture>
+            </div>
 
-          <div class="example__range-scale range-scale">
-            <div class="range-scale__bar">
-              <button class="range-scale__toggle toggle-before" type="button">
-                Было
-              </button>
-              <input type="range">
-              <button class="range-scale__toggle toggle-after" type="button">
-                Стало
-              </button>
+            <div class="example__image-wrapper image-cat-after">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-example-after@2x.png" width="560" height="512">
+                <img class="example__image example__image--after" src="img/cat-example-after@1x.png" width="280"
+                  height="256" alt="худой кот">
+              </picture>
+            </div>
+
+            <div class="example__range-scale-bar">
+              <div class="example__range-scale-circle">
+                <button class="example__range-scale-button" type="button">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -229,6 +251,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>

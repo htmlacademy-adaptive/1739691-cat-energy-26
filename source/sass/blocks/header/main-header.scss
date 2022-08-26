@@ -3,14 +3,25 @@
 }
 
 .main-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 0 15px;
-  align-items: center;
+  display: grid;
+  grid-template-areas:  "img-text"
+                        "item";
 }
 
-.main-header__logo {
+.main-header__logo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.main-header__logo-secondary{
+  grid-area: img-text;
+  display: block;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.main-header__logo-image {
   display: block;
 }
 
@@ -20,7 +31,19 @@
   }
 
   .main-header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 24px 0;
+    align-items: center;
+  }
+
+  .main-header__logo{
+    position: static;
+  }
+
+  .main-header__logo-secondary{
+    display: none;
   }
 }
 
@@ -28,20 +51,19 @@
   .main-header-desktop-image {
     position: relative;
 
-
-
       &::after{
       content: "";
       position: absolute;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-                                        rgba(104, 183, 56, 0.85)),
+      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85),
+                                                rgba(104, 183, 56, 0.85)),
       url(../img/index-background-desktop.png);
+      background-repeat: no-repeat;
+      background-position-x: right;
       right: 0;
       top: 0;
       height: 694px;
-      width: 720px;
+      width: 50%;
       }
-
   }
 
   .main-header__wrapper{

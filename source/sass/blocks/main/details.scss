@@ -1,6 +1,5 @@
 .details{
 
-
 }
 
 .details__item{
@@ -36,4 +35,21 @@
 
 @media (min-width: $tablet-width) {
 
+}
+
+@media (min-width: $desktop-width) {
+  .details{
+    display: grid;
+    gap: 20px;
+  }
+
+  .details__item{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  .details__item-text{
+    padding: 11px 0 11px 19px;
+  }
 }

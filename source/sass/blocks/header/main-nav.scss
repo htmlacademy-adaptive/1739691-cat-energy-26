@@ -1,11 +1,77 @@
-.main-nav {
+.main-nav{
+  &--closed .main-nav__list {
+    display: none;
+  }
 
+  &--nojs .main-nav__list {
+    display: block;
+    position: static;
+  }
 }
 
-.main-nav__toggle {
+.main-nav__toggle{
+  position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  right: 20px;
+  top: 22px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 2px;
+  top: 2px;
+  right: 0;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+
+  &:hover::before {
+    background-color: fade($black, 30%);
+  }
+
+  &:active::before {
+    background-color: fade($black, 60%);
+  }
+}
+
+.main-nav--opened .main-nav__toggle{
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::after{
+    transform: rotate(45deg);
+  }
+
+  &::before{
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: lighten($black, 30%);
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: lighten($black, 60%);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle{
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,4 +79,13 @@
     display: none;
   }
 
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav{
+    z-index: 1;
+  }
 }
