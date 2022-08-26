@@ -1,18 +1,24 @@
-.special-offer{
+.special-offer {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-                                    rgba(104, 183, 56, 0.85)),
-                    url(../img/special-offer-background.jpg);
+      rgba(104, 183, 56, 0.85)),
+    url(../img/special-offer-background.jpg);
   background-repeat: no-repeat;
   min-height: 290px;
   display: grid;
   margin: 35px 0;
+
+  @media (min-resolution: 2dppx){
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+    url(../img/special-offer-background@2x.jpg);
+  }
 }
 
-.special-offer__image-gift{
+.special-offer__image-gift {
   margin: 59px auto 0;
 }
 
-.special-offer__description{
+.special-offer__description {
   font-family: "Arial";
   font-weight: 400;
   font-size: 16px;
@@ -24,21 +30,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  .special-offer{
+  .special-offer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     min-height: 200px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-                                      rgba(104, 183, 56, 0.85)),
-                      url(../img/special-offer-background-tablet.jpg);
+        rgba(104, 183, 56, 0.85)),
+      url(../img/special-offer-background-tablet.jpg);
     background-size: cover;
+
+    @media (min-resolution: 2dppx){
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)),
+      url(../img/special-offer-background-tablet@2x.jpg);
+    }
   }
 
-  .special-offer__image-gift{
+  .special-offer__image-gift {
     margin: 0 0 0 77px;
   }
 
-  .special-offer__description{
+  .special-offer__description {
     text-align: left;
     width: 161px;
     margin: 0 0 0 70px;
@@ -46,23 +58,29 @@
   }
 }
 
-@media (min-width: $desktop-width){
-  .special-offer{
+@media (min-width: $desktop-width) {
+  .special-offer {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-                                    rgba(104, 183, 56, 0.85)),
-                    url(../img/special-offer-background.jpg);
+        rgba(104, 183, 56, 0.85)),
+      url(../img/special-offer-background-desktop.jpg);
     background-repeat: no-repeat;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @media (min-resolution: 2dppx){
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)),
+      url(../img/special-offer-background-dekstop@2x.jpg);
+    }
   }
 
-  .special-offer__image-gift{
+  .special-offer__image-gift {
     margin: 0;
   }
 
-  .special-offer__description{
+  .special-offer__description {
     text-align: center;
     width: 161px;
     margin: 0;

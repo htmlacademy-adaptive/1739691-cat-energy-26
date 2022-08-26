@@ -41,8 +41,6 @@
   height: 256px;
 }
 
-.example__image-wrapper {}
-
 .example__image {
   height: 100%;
   object-fit: cover;
@@ -66,30 +64,30 @@
   left: calc(50% - 2px);
   cursor: pointer;
 
-    &:hover{
-      border-color: $basic-green;
-    }
+  &:hover {
+    border-color: $basic-green;
+  }
 
-    &:hover > .example__range-scale-circle{
-      border-color: $basic-green;
-    }
+  &:hover>.example__range-scale-circle {
+    border-color: $basic-green;
+  }
 
-    &:hover > .example__range-scale-circle > .example__range-scale-button{
-      color: $basic-green;
-    }
+  &:hover>.example__range-scale-circle>.example__range-scale-button {
+    color: $basic-green;
+  }
 
-    &:active{
-      border-color: rgba(94, 170, 47, 0.6);
-      background-color: $white;
-    }
+  &:active {
+    border-color: rgba(94, 170, 47, 0.6);
+    background-color: $white;
+  }
 
-    &:active > .example__range-scale-circle{
-      border-color: rgba(94, 170, 47, 0.6);
-    }
+  &:active>.example__range-scale-circle {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
 
-    &:active > .example__range-scale-circle > .example__range-scale-button{
-      color: rgba(94, 170, 47, 0.6);
-    }
+  &:active>.example__range-scale-circle>.example__range-scale-button {
+    color: rgba(94, 170, 47, 0.6);
+  }
 }
 
 .example__range-scale-circle {

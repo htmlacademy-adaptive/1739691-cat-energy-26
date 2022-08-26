@@ -18,14 +18,14 @@
   padding: 2px;
   color: $special-gray-4;
 
-    &:hover{
-      color: $basic-green;
-    }
+  &:hover {
+    color: $basic-green;
+  }
 
-    &:active{
-      color: $basic-green;
-      opacity: 0.3;
-    }
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

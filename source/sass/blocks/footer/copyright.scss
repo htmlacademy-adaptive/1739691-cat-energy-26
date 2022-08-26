@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
 
-  &:hover > .copyright__link{
+  &:hover>.copyright__link {
     color: $basic-green;
   }
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
-
 }
 
 .copyright__text {
