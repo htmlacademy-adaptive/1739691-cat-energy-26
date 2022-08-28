@@ -13,7 +13,7 @@
     <div class="main-header__wrapper container-content">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1400px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
           <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
             alt="Логотип Кэт энерджи">
@@ -66,7 +66,7 @@
             </div>
             <div class="details__item">
               <label class="details__item-name" for="details-age">Возраст (лет):</label>
-              <input class="details__item-text" type="number" name="details-age" id="details-age" placeholder="7">
+              <input class="details__item-text error" type="number" name="details-age" id="details-age" placeholder="7">
             </div>
           </fieldset>
 
@@ -75,7 +75,7 @@
             <ul class="program-type__list">
               <li class="program-type__item">
                 <label class="program-type__control">
-                  <input class="program-type__control-input visually-hidden" type="radio" name="program" checked>
+                  <input class="program-type__control-input visually-hidden disabled" type="radio" name="program" checked>
                   <span class="program-type__control-mark-radio"></span>
                   <span class="program-type__control-label">Похудение</span>
                 </label>

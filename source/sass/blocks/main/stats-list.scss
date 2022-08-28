@@ -1,9 +1,9 @@
-.stats-list{
+.stats-list {
   display: flex;
   gap: 32px;
 }
 
-.stats-list__item{
+.stats-list__item {
   margin: 0 0 34px;
   width: 50%;
   text-align: center;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.stats-list__number{
+.stats-list__number {
   margin: 0;
   font-size: 24px;
   line-height: 24px;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-.stats-list__description{
+.stats-list__description {
   font-family: "Arial";
   font-size: 12px;
   line-height: 12px;
@@ -37,16 +37,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stats-list__item{
+  .stats-list__item {
     margin: 0;
   }
 
-  .stats-list__number{
+  .stats-list__number {
     font-size: 30px;
     line-height: 37px;
   }
 
-  .stats-list__description{
+  .stats-list__description {
     padding: 7px;
     min-width: max-content;
     font-size: 14px;
@@ -56,11 +56,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .stats-list{
+  .stats-list {
     gap: 42px;
   }
 
-  .stats-list__description{
+  .stats-list__description {
     background-color: $basic-gray-3;
   }
 }

@@ -1,8 +1,8 @@
-.extra-goods__title{
+.extra-goods__title {
   position: relative;
   padding-bottom: 36px;
 
-  &::after{
+  &::after {
     position: absolute;
     content: "";
     background-color: #68b738;
@@ -10,10 +10,10 @@
     height: 2px;
     right: -30px;
     top: 15px;
-}
+  }
 }
 
-.extra-goods__list{
+.extra-goods__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -21,14 +21,14 @@
 
 @media (min-width: $tablet-width) {
 
-  .extra-goods__list{
+  .extra-goods__list {
     outline: 1px solid $special-gray;
   }
 
-  .extra-goods__title{
+  .extra-goods__title {
     padding-bottom: 80px;
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       display: block;
@@ -37,43 +37,45 @@
       height: 2px;
       left: -67px;
       top: 20px;
-  }
-    &::after{
+    }
+
+    &::after {
       width: 328px;
       right: -70px;
       top: 20px;
     }
   }
 
-  .extra-goods__list{
+  .extra-goods__list {
     display: grid;
   }
 }
 
-@media (min-width: $desktop-width){
-  .extra-goods__list{
+@media (min-width: $desktop-width) {
+  .extra-goods__list {
     outline: none;
-    border-top: 1px solid $special-gray;;
+    border-top: 1px solid $special-gray;
+    ;
   }
 
-  .extra-goods__wrapper{
+  .extra-goods__wrapper {
     padding-bottom: 86px;
   }
 
-  .extra-goods__title{
+  .extra-goods__title {
 
-    &::before{
+    &::before {
       width: 70px;
       left: -110px;
     }
 
-    &::after{
+    &::after {
       width: 957px;
       right: -110px;
     }
   }
 
-  .extra-goods__content-wrapper{
+  .extra-goods__content-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 80px;

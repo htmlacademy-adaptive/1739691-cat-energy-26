@@ -1,26 +1,26 @@
-.form{
+.form {
   display: grid;
   font-size: 16px;
 }
 
-.form__title{
+.form__title {
   font-weight: 400;
   margin: 0;
   padding: 27px 0 37px;
 }
 
-.form__descripton{
+.form__descripton {
   text-transform: uppercase;
   padding-right: 54px;
   margin: 0;
   padding-bottom: 39px;
 }
 
-.form__program-selection{
+.form__program-selection {
   display: grid;
 }
 
-.form__group{
+.form__group {
   border: none;
   margin: 0;
   padding: 0 0 11px;
@@ -28,48 +28,47 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form{
+  .form {
     font-size: 20px;
     line-height: 30px;
   }
 
-  .form__title{
+  .form__title {
     padding: 39px 0 54px 40px;
   }
 
-  .form__descripton{
+  .form__descripton {
     padding: 0 0 0 40px;
     width: 370px;
   }
 
-  .form__program-selection{
+  .form__program-selection {
     padding: 66px 40px 72px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .form__title{
+@media (min-width: $desktop-width) {
+  .form__title {
     padding: 39px 0 54px;
   }
 
-  .form__descripton{
+  .form__descripton {
     padding: 0;
     width: 370px;
   }
 
-  .form__program-selection{
+  .form__program-selection {
     padding: 66px 0 72px;
   }
 
-  .form__details-wrapper{
+  .form__details-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
 
-  .form__group{
+  .form__group {
     padding: 0;
     display: block;
   }
 }
-

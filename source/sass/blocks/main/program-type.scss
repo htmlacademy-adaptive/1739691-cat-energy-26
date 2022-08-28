@@ -1,8 +1,8 @@
-.program-type{
+.program-type {
   padding: 22px 0 19px;
 }
 
-.program-type__list{
+.program-type__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -10,17 +10,17 @@
   gap: 13px;
 }
 
-.program-type__item{
-
-}
-
-.program-type__control{
+.program-type__control {
   position: relative;
   display: block;
   padding: 6px 0 6px 45px;
+
+  &:hover>.program-type__control-mark-radio {
+    border: 1px solid $border-gray-3;
+  }
 }
 
-.program-type__control-input:checked + .program-type__control-mark-radio::before{
+.program-type__control-input:checked+.program-type__control-mark-radio::before {
   position: absolute;
   content: "";
   width: 14px;
@@ -31,7 +31,7 @@
   top: calc(50% - 7px);
 }
 
-.program-type__control-mark-radio{
+.program-type__control-mark-radio {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,25 +41,25 @@
   border-radius: 50%;
 }
 
-.program-type__control-label{
+.program-type__control-label {
   text-transform: uppercase;
   color: $special-dark-gray-2;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
 
-  .program-type__list{
+  .program-type__list {
     padding: 30px;
     outline: 1px solid $basic-gray-4;
   }
 
-  .program-type__control{
+  .program-type__control {
     position: relative;
     display: block;
     padding: 5px 0 5px 60px;
   }
 
-  .program-type__control-input:checked + .program-type__control-mark-radio::before{
+  .program-type__control-input:checked+.program-type__control-mark-radio::before {
     position: absolute;
     content: "";
     width: 18px;
@@ -68,19 +68,19 @@
     top: calc(50% - 9px);
   }
 
-  .program-type__control-mark-radio{
+  .program-type__control-mark-radio {
     position: absolute;
     width: 40px;
     height: 40px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .program-type{
+@media (min-width: $desktop-width) {
+  .program-type {
     padding: 0;
   }
 
-  .program-type__list{
+  .program-type__list {
     padding: 25px 30px;
   }
 }

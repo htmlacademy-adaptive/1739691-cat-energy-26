@@ -1,4 +1,4 @@
-.extra-goods-item__title{
+.extra-goods-item__title {
   margin: 0;
   padding: 13px 0;
   font-size: 16px;
@@ -8,12 +8,12 @@
   color: $special-dark-gray-2;
 }
 
-.extra-goods-item{
+.extra-goods-item {
   display: grid;
   margin: 0;
 }
 
-.extra-goods-item__description{
+.extra-goods-item__description {
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -22,11 +22,11 @@
   line-height: 14px;
 }
 
-.extra-goods-item__value{
+.extra-goods-item__value {
   margin-left: auto;
 }
 
-.extra-goods-item__button{
+.extra-goods-item__button {
   margin-bottom: 19px;
 }
 
@@ -34,44 +34,43 @@
   .extra-goods-item {
     padding: 26px 38px 28px;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       border-bottom: 1px solid $special-gray;
     }
   }
 
-  .extra-goods-item__content-wrapper{
+  .extra-goods-item__content-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 21px;
   }
 
-  .extra-goods-item__title{
+  .extra-goods-item__title {
 
     padding: 0;
     font-size: 20px;
     line-height: 20px;
-
   }
 
-  .extra-goods-item__description{
+  .extra-goods-item__description {
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .extra-goods-item__value{
+  .extra-goods-item__value {
     margin-left: 49px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .extra-goods-item__button{
+  .extra-goods-item__button {
     margin-bottom: 0;
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .extra-goods-item {
     display: grid;
     grid-template-columns: 1fr 244px;
@@ -80,7 +79,7 @@
     border-bottom: 1px solid $special-gray;
   }
 
-  .extra-goods-item__content-wrapper{
+  .extra-goods-item__content-wrapper {
     align-items: center;
     margin: 0;
     display: grid;
@@ -88,13 +87,13 @@
     gap: 163px;
   }
 
-  .extra-goods-item__description{
+  .extra-goods-item__description {
     min-width: 288px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .extra-goods-item__value{
+  .extra-goods-item__value {
     margin: 0;
   }
 }

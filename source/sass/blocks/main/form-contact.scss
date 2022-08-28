@@ -1,42 +1,42 @@
-.form-contact{
+.form-contact {
   padding: 26px 0 23px;
   display: grid;
 }
 
-.form-contact__title{
+.form-contact__title {
   position: relative;
   width: 100%;
 
-    &::after{
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
-      width: 99px;
-      height: 2px;
-      right: -20px;
-      top: 15px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    width: 99px;
+    height: 2px;
+    right: -20px;
+    top: 15px;
+  }
 }
 
-.form-contact__item{
+.form-contact__item {
   display: flex;
   align-items: center;
   gap: 11px;
   padding-bottom: 14px;
 }
 
-.form-contact__item-name{
+.form-contact__item-name {
   text-transform: uppercase;
   color: $special-dark-gray;
 }
 
-.form-contact__item-wrapper{
+.form-contact__item-wrapper {
   position: relative;
   display: flex;
   flex-grow: 1;
 }
 
-.form-contact__input-detail{
+.form-contact__input-detail {
   flex-grow: 1;
   padding: 14px 40px 14px 15px;
   font: inherit;
@@ -46,61 +46,62 @@
   outline: 1px solid $special-gray;
 }
 
-.form-contact__email-logo{
+.form-contact__email-logo {
   position: absolute;
   right: 15px;
   top: calc(50% - 7px);
 }
 
-.form-contact__phone-logo{
+.form-contact__phone-logo {
   position: absolute;
   right: 13px;
   top: calc(50% - 10px);
 }
 
-@media (min-width: $tablet-width){
-  .form-contact__title{
+@media (min-width: $tablet-width) {
+  .form-contact__title {
 
-      &::before{
-        position: absolute;
-        content: "";
-        background-color: $basic-green;
-        width: 30px;
-        height: 2px;
-        left: -70px;
-        top: 20px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      width: 30px;
+      height: 2px;
+      left: -70px;
+      top: 20px;
     }
-      &::after{
-        position: absolute;
-        content: "";
-        background-color: $basic-green;
-        width: 145px;
-        height: 2px;
-        right: -70px;
-        top: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      width: 145px;
+      height: 2px;
+      right: -70px;
+      top: 20px;
     }
   }
 
-  .form-contact__email-logo{
+  .form-contact__email-logo {
     position: absolute;
     right: 19px;
   }
 
-  .form-contact__phone-logo{
+  .form-contact__phone-logo {
     position: absolute;
     right: 17px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .form-contact{
+@media (min-width: $desktop-width) {
+  .form-contact {
     grid-template-columns: 1fr 1fr;
     gap: 78px;
   }
 
-  .form-contact__title{
+  .form-contact__title {
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       background-color: $basic-green;
@@ -109,7 +110,8 @@
       left: -110px;
       top: 20px;
     }
-    &::after{
+
+    &::after {
       position: absolute;
       content: "";
       background-color: $basic-green;

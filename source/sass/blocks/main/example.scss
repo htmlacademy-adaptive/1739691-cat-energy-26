@@ -41,8 +41,6 @@
   height: 256px;
 }
 
-.example__image-wrapper {}
-
 .example__image {
   height: 100%;
   object-fit: cover;
@@ -60,19 +58,43 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  border: 2px solid $special-gray-3;
+  border: 2px solid $special-gray-4;
   border-radius: 2px;
-  background-color: $special-gray-3;
+  background-color: $special-gray-4;
   left: calc(50% - 2px);
-  z-index: 3;
   cursor: pointer;
+
+  &:hover {
+    border-color: $basic-green;
+  }
+
+  &:hover>.example__range-scale-circle {
+    border-color: $basic-green;
+  }
+
+  &:hover>.example__range-scale-circle>.example__range-scale-button {
+    color: $basic-green;
+  }
+
+  &:active {
+    border-color: rgba(94, 170, 47, 0.6);
+    background-color: $white;
+  }
+
+  &:active>.example__range-scale-circle {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active>.example__range-scale-circle>.example__range-scale-button {
+    color: rgba(94, 170, 47, 0.6);
+  }
 }
 
 .example__range-scale-circle {
   position: absolute;
   width: 40px;
   height: 40px;
-  border: 2px solid $special-gray-3;
+  border: 2px solid $special-gray-4;
   border-radius: 50%;
   z-index: 3;
   background-color: $white;
@@ -88,6 +110,7 @@
   left: calc(50% - 12px);
   padding: 0;
   cursor: pointer;
+  color: $special-gray-4;
 }
 
 @media (min-width: $tablet-width) {

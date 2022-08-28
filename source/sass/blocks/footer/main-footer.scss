@@ -12,6 +12,14 @@
   text-align: center;
   padding-bottom: 31px;
   border-bottom: 1px solid $border-gray;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.68;
+  }
 }
 
 .main-footer__copyright {
@@ -31,7 +39,7 @@
     align-items: center;
   }
 
-  .copyright__text{
+  .copyright__text {
     margin-right: 22px;
   }
 
@@ -45,5 +53,3 @@
     border: none;
   }
 }
-
-@media (min-width: $desktop-width){}

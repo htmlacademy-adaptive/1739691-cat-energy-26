@@ -1,26 +1,26 @@
-.form-additionally{
+.form-additionally {
   display: grid;
 
 }
 
-.form-additionally__title{
+.form-additionally__title {
   padding: 0 0 34px;
   width: 100%;
   position: relative;
 
-    &::after{
-      position: absolute;
-      content: "";
-      display: block;
-      background-color: $basic-green;
-      width: 136px;
-      height: 2px;
-      right: -20px;
-      top: 15px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $basic-green;
+    width: 136px;
+    height: 2px;
+    right: -20px;
+    top: 15px;
+  }
 }
 
-.form-additionally__list{
+.form-additionally__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -29,25 +29,31 @@
   gap: 12px;
 }
 
-.form-additionally__item{
+.form-additionally__item {
   font: inherit;
   text-transform: uppercase;
 }
 
-.form-additionally__control{
+.form-additionally__control {
   position: relative;
   display: block;
   padding: 5px 0 7px 46px
 }
 
-.form-additionally__control-input:checked + .form-additionally__control-mark-checkbox::before{
+.form-additionally__control {
+  &:hover>.form-additionally__control-mark-checkbox {
+    border: 1px solid $border-gray-3;
+  }
+}
+
+.form-additionally__control-input:checked~.form-additionally__control-mark-checkbox::before {
   position: absolute;
   content: url(../img/checkbox-checked.svg);
   left: calc(50% - 9px);
   top: calc(50% - 7px);
 }
 
-.form-additionally__control-mark-checkbox{
+.form-additionally__control-mark-checkbox {
   position: absolute;
   content: "";
   left: 0;
@@ -57,23 +63,21 @@
   border: 1px solid $special-gray;
 }
 
-.form-additionally__control-label{
+.form-additionally__control-label {}
 
-}
-
-.form__item-wrapper{
+.form__item-wrapper {
   display: grid;
 }
 
-.form__required-fields-text{
+.form__required-fields-text {
   text-align: center;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
 
-  .form-additionally__title{
+  .form-additionally__title {
 
-      &::before{
+    &::before {
       position: absolute;
       content: "";
       display: block;
@@ -83,8 +87,9 @@
       left: -70px;
       top: 20px;
     }
-      &::after{
-        position: absolute;
+
+    &::after {
+      position: absolute;
       content: "";
       display: block;
       background-color: #68b738;
@@ -95,75 +100,76 @@
     }
   }
 
-  .form-additionally__list{
+  .form-additionally__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 61px;
   }
 
-  .form-additionally__control{
+  .form-additionally__control {
     position: relative;
     padding: 5px 0 5px 59px
   }
 
-  .form-additionally__control-input:checked + .form-additionally__control-mark-checkbox::before{
+  .form-additionally__control-input:checked+.form-additionally__control-mark-checkbox::before {
     position: absolute;
     content: url(../img/checkbox-checked-tablet.svg);
     left: calc(50% - 12px);
     top: calc(50% - 13px);
   }
 
-  .form-additionally__control-mark-checkbox{
+  .form-additionally__control-mark-checkbox {
     position: absolute;
     content: "";
     width: 40px;
     height: 40px;
   }
 
-  .form__item-wrapper{
+  .form__item-wrapper {
     grid-template-columns: 1fr 1fr;
     gap: 61px;
   }
 
-  .form__button{
+  .form__button {
     font-size: inherit;
     margin-left: 1px;
 
   }
 
-  .form__required-fields-text{
+  .form__required-fields-text {
     font-size: 16px;
     line-height: 16px;
     text-align: left;
   }
 }
 
-@media (min-width: $desktop-width){
-  .form-additionally__title{
+@media (min-width: $desktop-width) {
+  .form-additionally__title {
 
-    &::before{
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: #68b738;
-    width: 70px;
-    height: 2px;
-    left: -110px;
-    top: 20px;
-  }
-    &::after{
+    &::before {
       position: absolute;
-    content: "";
-    display: block;
-    background-color: #68b738;
-    width: 1078px;
-    height: 2px;
-    right: -110px;
-    top: 20px;
-  }
-}
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 70px;
+      height: 2px;
+      left: -110px;
+      top: 20px;
+    }
 
-  .form-additionally__list{
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 1078px;
+      height: 2px;
+      right: -110px;
+      top: 20px;
+    }
+  }
+
+  .form-additionally__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

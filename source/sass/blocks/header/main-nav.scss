@@ -1,4 +1,4 @@
-.main-nav{
+.main-nav {
   &--closed .main-nav__list {
     display: none;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   position: absolute;
   background-color: transparent;
   border: none;
@@ -39,7 +39,8 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle{
+.main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -51,11 +52,11 @@
     background-color: $black;
   }
 
-  &::after{
+  &::after {
     transform: rotate(45deg);
   }
 
-  &::before{
+  &::before {
     transform: rotate(-45deg);
   }
 
@@ -70,12 +71,12 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle{
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle{
+  .main-nav__toggle {
     display: none;
   }
 
@@ -85,7 +86,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav{
+  .main-nav {
     z-index: 1;
   }
 }

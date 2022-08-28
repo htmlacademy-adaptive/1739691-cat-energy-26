@@ -1,25 +1,23 @@
-.form-comment{
+.form-comment {}
 
-}
-
-.form-comment__title{
+.form-comment__title {
   padding-bottom: 38px;
   width: 100%;
   position: relative;
 
-    &::after{
-      position: absolute;
-      content: "";
-      display: block;
-      background-color: $basic-green;
-      width: 158px;
-      height: 2px;
-      right: -20px;
-      top: 15px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $basic-green;
+    width: 158px;
+    height: 2px;
+    right: -20px;
+    top: 15px;
+  }
 }
 
-.form-comment__message{
+.form-comment__message {
   font: inherit;
   text-transform: uppercase;
   color: $special-dark-gray;
@@ -30,10 +28,10 @@
   resize: none;
 }
 
-@media (min-width: $tablet-width){
-  .form-comment__title{
+@media (min-width: $tablet-width) {
+  .form-comment__title {
 
-      &::before{
+    &::before {
       position: absolute;
       content: "";
       display: block;
@@ -43,8 +41,9 @@
       left: -70px;
       top: 20px;
     }
-      &::after{
-        position: absolute;
+
+    &::after {
+      position: absolute;
       content: "";
       display: block;
       background-color: #68b738;
@@ -54,34 +53,31 @@
       top: 20px;
     }
   }
-
-  .form-comment__message{
-
-  }
 }
 
-@media (min-width: $desktop-width){
-  .form-comment__title{
+@media (min-width: $desktop-width) {
+  .form-comment__title {
 
-    &::before{
-    position: absolute;
-    content: "";
-    display: block;
-    background-color: #68b738;
-    width: 70px;
-    height: 2px;
-    left: -110px;
-    top: 20px;
-  }
-    &::after{
+    &::before {
       position: absolute;
-    content: "";
-    display: block;
-    background-color: #68b738;
-    width: 1108px;
-    height: 2px;
-    right: -110px;
-    top: 20px;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 70px;
+      height: 2px;
+      left: -110px;
+      top: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: #68b738;
+      width: 1108px;
+      height: 2px;
+      right: -110px;
+      top: 20px;
+    }
   }
-}
 }

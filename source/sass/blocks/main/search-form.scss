@@ -1,20 +1,25 @@
-.search-form{
+.search-form {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-                                    rgba(104, 183, 56, 0.85)),
-                    url(../img/index-background-mobile.png);
+      rgba(104, 183, 56, 0.85)),
+    url(../img/index-background-mobile.png);
   background-size: auto 302px;
   background-repeat: no-repeat;
   background-position-x: center;
+
+  @media (min-resolution: 2dppx){
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+    url(../img/index-background-mobile@2x.png);
+  }
 }
 
-.search-form__title{
+.search-form__title {
   text-align: center;
   color: $white;
   padding-top: 27px;
-
 }
 
-.search-form__subtitle{
+.search-form__subtitle {
   text-align: center;
   color: $white;
   margin: 0 auto;
@@ -23,7 +28,7 @@
   line-height: 14px;
 }
 
-.search-form__image{
+.search-form__image {
   display: block;
   margin: 0 auto;
 }
@@ -36,23 +41,23 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: $tablet-width){
-  .search-form{
+@media (min-width: $tablet-width) {
+  .search-form {
     background-image: none;
     background-size: auto;
   }
 
-  .search-form__container{
+  .search-form__container {
     position: relative;
   }
 
-  .search-form__title{
+  .search-form__title {
     color: $black;
     padding: 0 0 41px 80px;
     text-align: start;
   }
 
-  .search-form__subtitle{
+  .search-form__subtitle {
     color: $black;
     text-transform: uppercase;
     font-size: 20px;
@@ -61,7 +66,7 @@
     text-align: start;
   }
 
-  .search-form__button{
+  .search-form__button {
     position: absolute;
     top: 220px;
     left: 80px;
@@ -75,24 +80,24 @@
 
 @media (min-width: $desktop-width) {
 
-  .search-form__container{
+  .search-form__container {
     min-height: 555px;
   }
 
-  .search-form__title{
+  .search-form__title {
     padding: 109px 0 41px 80px;
   }
 
-  .search-form__subtitle{
+  .search-form__subtitle {
     margin: 0;
   }
 
-  .search-form__button{
+  .search-form__button {
     bottom: 160px;
     top: auto;
   }
 
-  .search-form__image{
+  .search-form__image {
     position: absolute;
     right: 0;
     top: 0;
