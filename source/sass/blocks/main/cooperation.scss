@@ -37,10 +37,11 @@ iframe {
   .cooperation__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 56px 40px;
+    padding: 56px 40px 61px;
   }
 
   .cooperation__title {
+    margin-top: 4px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -51,7 +52,7 @@ iframe {
     width: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
   }
 
   iframe {

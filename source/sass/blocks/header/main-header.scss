@@ -24,7 +24,7 @@
 
 .main-header__logo-secondary {
   display: block;
-  padding: 24px 0;
+  padding: 23px 0 24px;
   margin: 0 auto;
 
   &:hover {
@@ -84,7 +84,6 @@
         background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85),
           rgba(104, 183, 56, 0.85)),
         url(../img/index-background-desktop@2x.png);
-        background-size: 2880px auto;
       }
     }
   }

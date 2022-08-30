@@ -1,10 +1,10 @@
 .features__title {
-  padding: 20px 0 40px;
+  padding: 22px 0 40px 1px;
 }
 
 .features__list {
   margin: 0;
-  padding: 0;
+  padding: 2px 0 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
@@ -29,10 +29,8 @@
     &::before {
       position: absolute;
       content: url(../img/icon-food.svg);
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: calc(50% - 14px);
+      top: calc(50% - 13px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,10 +41,8 @@
     &::before {
       position: absolute;
       content: url(../img/icon-cook.svg);
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: calc(50% - 16px);
+      top: calc(50% - 16px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,10 +53,8 @@
     &::before {
       position: absolute;
       content: url(../img/icon-eat.svg);
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: calc(50% - 13px);
+      top: calc(50% - 15px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -71,10 +65,8 @@
     &::before {
       position: absolute;
       content: url(../img/icon-result.svg);
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: calc(50% - 17px);
+      top: calc(50% - 17px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -94,33 +86,54 @@
     border-bottom: 1px solid $border-gray-2;
   }
 
+  .features__title {
+    padding-top: 45px;
+  }
+
   .features__list {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 65px;
+    gap: 47px 60px;
     counter-reset: features-counter;
+    padding-bottom: 46px;
   }
 
   .features__item {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0 57px;
+    padding: 30px 0 57px;
     margin-right: 76px;
     gap: 31px;
 
     &--food {
       max-width: 230px;
+
+      &::after{
+        right: 6px;
+      }
     }
 
     &--cook {
       max-width: 246px;
+
+      &::after{
+        right: 2px;
+      }
     }
 
     &--eat {
       max-width: 247px;
+
+      &::after{
+        right: 0;
+      }
     }
 
     &--result {
       max-width: 249px;
+
+      &::after{
+        right: 0;
+      }
     }
   }
 
@@ -132,8 +145,7 @@
     line-height: 280px;
     font-weight: 400;
     color: $basic-gray;
-    right: 0;
-    top: 0;
+    top: -9px;
   }
 
   .features__square {

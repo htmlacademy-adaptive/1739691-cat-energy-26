@@ -28,7 +28,7 @@
   z-index: 1;
   left: 0;
   right: 0;
-  bottom: -13px;
+  bottom: -14px;
   color: $special-dark-gray;
   margin: 0 auto;
   padding: 0 14px;
@@ -37,8 +37,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .stats-list {
+    gap: 42px;
+  }
+
   .stats-list__item {
     margin: 0;
+    min-width: 162px;
   }
 
   .stats-list__number {
