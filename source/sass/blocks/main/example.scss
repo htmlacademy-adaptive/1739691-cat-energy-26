@@ -7,7 +7,7 @@
 }
 
 .example__title {
-  padding-top: 66px;
+  padding-top: 27px;
   margin-bottom: 40px;
 }
 
@@ -15,6 +15,7 @@
   font-family: "Arial";
   color: $special-dark-gray;
   margin: 0 0 20px;
+  padding-top: 2px;
 }
 
 .example__stats {
@@ -134,22 +135,24 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 20px;
+    margin: 0 0 55px;
+    padding: 0 10px 0 0;
   }
 
   .example__stats-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 104px;
+    padding-bottom: 106px;
   }
 
   .example__costs {
     margin: 0;
+    padding-right: 3px;
     text-align: right;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .example__range-slider-wrapper {
