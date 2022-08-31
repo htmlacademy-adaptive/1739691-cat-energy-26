@@ -1,4 +1,6 @@
-.card-show-more {}
+.card-show-more__info-wrapper{
+  padding-bottom: 7px;
+}
 
 .card-show-more__image {
   margin: 5px auto 0;
@@ -19,7 +21,6 @@
 
 .card-show-more__description {
   margin: 0;
-  padding-bottom: 21px;
   text-align: center;
   font-family: "Arial";
   font-size: 12px;

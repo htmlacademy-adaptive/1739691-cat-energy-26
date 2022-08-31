@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  border-bottom: 1px solid $border-gray;
 }
 
 .main-header__wrapper {
@@ -43,6 +44,7 @@
 @media (min-width: $tablet-width) {
   .main-header {
     position: static;
+    border-bottom: none;
   }
 
   .main-header__wrapper {

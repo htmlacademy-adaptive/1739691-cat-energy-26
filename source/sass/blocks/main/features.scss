@@ -79,6 +79,12 @@
   color: $special-dark-gray;
   padding: 2px 0 4px;
   font-family: "Arial";
+
+  &--result{
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -166,13 +172,64 @@
     border-bottom: none;
   }
 
+  .features__title {
+    padding-top: 70px;
+  }
+
   .features__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 94px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 
   .features__item {
     margin-right: 0;
+
+    &--food {
+      max-width: 230px;
+
+      &::after{
+        right: 6px;
+      }
+    }
+
+    &--cook {
+      max-width: 246px;
+      margin-left: -3px;
+
+      &::after{
+        right: -6px;
+      }
+    }
+
+    &--eat {
+      max-width: 247px;
+      margin-left: -7px;
+
+      &::after{
+        right: -5px;
+      }
+    }
+
+    &--result {
+      max-width: 249px;
+      margin-left: -10px;
+
+      &::after{
+        right: -4px;
+      }
+    }
+  }
+
+  .features__description {
+    padding: 2px 0 0;
+
+    &--result{
+      min-width: 245px;
+
+      br {
+        display: block;
+      }
+    }
   }
 }

@@ -1,25 +1,38 @@
 .extra-goods-item__title {
-  margin: 0;
+  margin: 0 0 0 1px;
   padding: 13px 0;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: $special-dark-gray-2;
+
+  &--water{
+    padding-top: 12px;
+  }
 }
 
 .extra-goods-item {
   display: grid;
   margin: 0;
+  border-top: 1px solid $special-gray;
+
+  &:last-child{
+    border-bottom: 1px solid $special-gray;
+  }
 }
 
 .extra-goods-item__description {
-  margin: 0;
+  margin: 0 0 0 -1px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
   font-family: "Arial";
-  line-height: 14px;
+  line-height: 15px;
+
+  &:nth-child(2){
+    padding-bottom: 14px;
+  }
 }
 
 .extra-goods-item__value {
@@ -27,7 +40,7 @@
 }
 
 .extra-goods-item__button {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
