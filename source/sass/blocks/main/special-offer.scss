@@ -3,6 +3,7 @@
       rgba(104, 183, 56, 0.85)),
     url(../img/special-offer-background.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 290px;
   display: grid;
   margin: 35px 0;
@@ -16,6 +17,7 @@
 
 .special-offer__image-gift {
   margin: 59px auto 0;
+  display: block;
 }
 
 .special-offer__description {
@@ -38,6 +40,7 @@
         rgba(104, 183, 56, 0.85)),
       url(../img/special-offer-background-tablet.jpg);
     background-size: cover;
+    margin: 69px 0 76px;
 
     @media (min-resolution: 2dppx){
       background-image: linear-gradient(rgba(104, 183, 56, 0.85),
@@ -53,7 +56,7 @@
   .special-offer__description {
     text-align: left;
     width: 161px;
-    margin: 0 0 0 70px;
+    margin: 4px 0 0 69px;
     padding: 0;
   }
 }
@@ -67,7 +70,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 
     @media (min-resolution: 2dppx){
       background-image: linear-gradient(rgba(104, 183, 56, 0.85),
@@ -77,12 +79,12 @@
   }
 
   .special-offer__image-gift {
-    margin: 0;
+    margin: 55px 0 48px;
   }
 
   .special-offer__description {
     text-align: center;
     width: 161px;
-    margin: 0;
+    margin: 0 2px 0 0;
   }
 }
