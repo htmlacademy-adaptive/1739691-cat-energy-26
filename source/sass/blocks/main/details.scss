@@ -1,14 +1,18 @@
 .details__item {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 14px;
 }
 
 .details__item-name {
-
   color: $special-dark-gray;
   text-transform: uppercase;
   align-self: center;
+
+  &--weight,
+  &--age{
+    margin-right: 3px;
+  }
 }
 
 .details__item-text::-webkit-outer-spin-button,
@@ -25,7 +29,7 @@
   text-transform: uppercase;
   border: none;
   outline: 1px solid $basic-gray-4;
-  padding: 12px 0 13px 15px;
+  padding: 13px 0 14px 15px;
 
 
   &:hover {

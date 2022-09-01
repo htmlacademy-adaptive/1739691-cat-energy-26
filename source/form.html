@@ -55,17 +55,17 @@
           <fieldset class="form__group details">
             <legend class="visually-hidden">Кошачьи данные</legend>
             <div class="details__item">
-              <label class="details__item-name" for="details-name">Имя:*</label>
+              <label class="details__item-name details__item-name--name" for="details-name">Имя:*</label>
               <input class="details__item-text" type="text" name="details-name" id="form-name" placeholder="Барсик"
                 required>
             </div>
             <div class="details__item">
-              <label class="details__item-name" for="details-weight">Вес (кг):*</label>
+              <label class="details__item-name details__item-name--weight" for="details-weight">Вес (кг):*</label>
               <input class="details__item-text" type="number" name="details-weight" id="details-weight" placeholder="7"
                 required>
             </div>
             <div class="details__item">
-              <label class="details__item-name" for="details-age">Возраст (лет):</label>
+              <label class="details__item-name details__item-name--age" for="details-age">Возраст (лет):</label>
               <input class="details__item-text error" type="number" name="details-age" id="details-age" placeholder="7">
             </div>
           </fieldset>
@@ -74,7 +74,7 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="program-type__list">
               <li class="program-type__item">
-                <label class="program-type__control">
+                <label class="program-type__control program-type__control--weight-loss">
                   <input class="program-type__control-input visually-hidden disabled" type="radio" name="program"
                     checked>
                   <span class="program-type__control-mark-radio"></span>
@@ -82,14 +82,14 @@
                 </label>
               </li>
               <li class="program-type__item">
-                <label class="program-type__control">
+                <label class="program-type__control program-type__control--weight-gain">
                   <input class="program-type__control-input visually-hidden" type="radio" name="program">
                   <span class="program-type__control-mark-radio"></span>
                   <span class="program-type__control-label">Набор массы</span>
                 </label>
               </li>
               <li class="program-type__item">
-                <label class="program-type__control">
+                <label class="program-type__control program-type__control--advice">
                   <input class="program-type__control-input visually-hidden" type="radio" name="program">
                   <span class="program-type__control-mark-radio"></span>
                   <span class="program-type__control-label">Не знаю (Нужен ваш совет)</span>
@@ -129,7 +129,7 @@
 
         <fieldset class="form__group form-comment">
           <legend class="form-comment__title section-title">Комментарий</legend>
-          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="8"
+          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 

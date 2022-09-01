@@ -1,6 +1,5 @@
 .form-additionally {
   display: grid;
-
 }
 
 .form-additionally__title {
@@ -26,12 +25,18 @@
   list-style-type: none;
   padding-bottom: 34px;
   display: grid;
-  gap: 12px;
+  gap: 13px;
+
+
 }
 
 .form-additionally__item {
   font: inherit;
   text-transform: uppercase;
+
+  &:last-child{
+    margin-top: -1px;
+  }
 }
 
 .form-additionally__control {
@@ -63,14 +68,17 @@
   border: 1px solid $special-gray;
 }
 
-.form-additionally__control-label {}
-
 .form__item-wrapper {
   display: grid;
 }
 
 .form__required-fields-text {
   text-align: center;
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0 21px;
+
 }
 
 @media (min-width: $tablet-width) {
