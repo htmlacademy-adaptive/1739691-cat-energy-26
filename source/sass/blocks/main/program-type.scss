@@ -73,9 +73,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program-type {
+    padding: 42px 0 0;
+    margin: 0 -2px 51px 1px;
+
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      display: none;
+    }
+  }
 
   .program-type__list {
-    padding: 30px;
+    padding: 25px 28px 23px;
     outline: 1px solid $basic-gray-4;
   }
 
@@ -104,9 +116,10 @@
 @media (min-width: $desktop-width) {
   .program-type {
     padding: 0;
+    margin: 0;
   }
 
   .program-type__list {
-    padding: 25px 30px;
+    padding: 25px 30px 25px 28px;
   }
 }

@@ -47,21 +47,43 @@
   padding: 21px 0 32px;
 }
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .details__item {
+    margin: 0 -2px 21px 0;
+    gap: 18px;
+  }
+
+  .details__item-text {
+    padding: 10px 10px 11px 18px;
+
+    &--age{
+      margin-left: -2px;
+      padding-left: 19px;
+    }
+  }
+}
 
 @media (min-width: $desktop-width) {
   .details {
     display: grid;
-    gap: 20px;
+    gap: 21px;
+    margin: 0 4px 0 1px;
   }
 
   .details__item {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     margin-bottom: 0;
   }
 
+  .details__item-name {
+    margin-top: -1px;
+  }
+
   .details__item-text {
-    padding: 11px 0 11px 19px;
+
+    &--age{
+      padding-left: 16px;
+    }
   }
 }

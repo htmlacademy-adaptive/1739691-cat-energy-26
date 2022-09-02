@@ -56,17 +56,17 @@
             <legend class="visually-hidden">Кошачьи данные</legend>
             <div class="details__item">
               <label class="details__item-name details__item-name--name" for="details-name">Имя:*</label>
-              <input class="details__item-text" type="text" name="details-name" id="form-name" placeholder="Барсик"
+              <input class="details__item-text details__item-text--name error" type="text" name="details-name" id="form-name" placeholder="Барсик"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--weight" for="details-weight">Вес (кг):*</label>
-              <input class="details__item-text" type="number" name="details-weight" id="details-weight" placeholder="7"
+              <input class="details__item-text details__item-text--weight error" type="number" name="details-weight" id="details-weight" placeholder="7"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--age" for="details-age">Возраст (лет):</label>
-              <input class="details__item-text error" type="number" name="details-age" id="details-age" placeholder="7">
+              <input class="details__item-text details__item-text--age error" type="number" name="details-age" id="details-age" placeholder="7">
             </div>
           </fieldset>
 
@@ -101,9 +101,9 @@
         <fieldset class="form__group form-contact">
           <legend class="form-contact__title section-title">Контактные данные (владельца кота)</legend>
           <div class="form-contact__item">
-            <label class="form-contact__item-name" for="email">E-mail:*</label>
-            <div class="form-contact__item-wrapper item-wrapper">
-              <input class="form-contact__input-detail" type="email" placeholder="kuklachev@gmail.com" name="email"
+            <label class="form-contact__item-name form-contact__item-name--email" for="email">E-mail:*</label>
+            <div class="form-contact__item-wrapper form-contact__item-wrapper--email">
+              <input class="form-contact__input-detail form-contact__input-detail--email" type="email" placeholder="kuklachev@gmail.com" name="email"
                 id="email" required>
 
               <svg class="form-contact__email-logo" width="19" height="14" viewBox="0 0 19 14" fill="none">
@@ -113,9 +113,9 @@
             </div>
           </div>
           <div class="form-contact__item">
-            <label class="form-contact__item-name" for="phone">Телефон:*</label>
-            <div class="form-contact__item-wrapper item-wrapper">
-              <input class="form-contact__input-detail" type="tel" placeholder="8 (960) 900-60-90" name="phone"
+            <label class="form-contact__item-name form-contact__item-name--phone" for="phone">Телефон:*</label>
+            <div class="form-contact__item-wrapper form-contact__item-wrapper--phone">
+              <input class="form-contact__input-detail form-contact__input-detail--phone" type="tel" placeholder="8 (960) 900-60-90" name="phone"
                 id="phone" required>
 
               <svg class="form-contact__phone-logo" width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -129,7 +129,7 @@
 
         <fieldset class="form__group form-comment">
           <legend class="form-comment__title section-title">Комментарий</legend>
-          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="7"
+          <textarea class="form-comment__message" name="comment-message" id="comment-message" cols="35" rows="5"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
@@ -172,7 +172,7 @@
           </ul>
 
           <div class="form__item-wrapper">
-            <button class="form__button button" type="submit">Отправить заявку</button>
+            <button class="form__button button button--form-submit" type="submit">Отправить заявку</button>
 
             <p class="form__required-fields-text">* — Обязательные поля</p>
           </div>

@@ -1,5 +1,3 @@
-.form-comment {}
-
 .form-comment__title {
   padding: 0 0 38px;
   width: 100%;
@@ -33,6 +31,9 @@
 
 @media (min-width: $tablet-width) {
   .form-comment__title {
+    padding: 33px 0 0;
+    width: 100%;
+    margin: 0 0 77px;
 
     &::before {
       position: absolute;
@@ -42,7 +43,7 @@
       width: 30px;
       height: 2px;
       left: -70px;
-      top: 20px;
+      top: 55px;
     }
 
     &::after {
@@ -53,8 +54,14 @@
       width: 478px;
       height: 2px;
       right: -70px;
-      top: 20px;
+      top: 55px;
     }
+  }
+
+  .form-comment__message {
+    padding: 9px 12px 0 20px;
+    min-height: 174px;
+    margin-bottom: 47px;
   }
 }
 
@@ -69,7 +76,7 @@
       width: 70px;
       height: 2px;
       left: -110px;
-      top: 20px;
+      top: 53px;
     }
 
     &::after {
@@ -80,7 +87,12 @@
       width: 1108px;
       height: 2px;
       right: -110px;
-      top: 20px;
+      top: 53px;
     }
+  }
+
+  .form-comment__message {
+    padding: 8px 12px 0 20px;
+    margin-bottom: 58px;
   }
 }

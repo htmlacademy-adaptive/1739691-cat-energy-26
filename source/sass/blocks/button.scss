@@ -35,12 +35,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .button {
+    &--form-submit{
+      padding: 16px 0;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .button {
     margin: 0 3px 0 9px;
 
     &--extra-goods{
       margin: 0;
+    }
+
+    &--form-submit{
+      padding: 13px 0;
+      line-height: 26px;
+      margin-right: 10px;
     }
   }
 }

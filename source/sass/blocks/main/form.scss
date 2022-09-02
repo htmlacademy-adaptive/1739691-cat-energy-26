@@ -28,6 +28,14 @@
   display: block;
 }
 
+.form__required-fields-text {
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0 21px;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     font-size: 20px;
@@ -35,22 +43,32 @@
   }
 
   .form__title {
-    padding: 39px 0 54px 40px;
+    padding: 41px 0 54px 39px;
   }
 
   .form__descripton {
     padding: 0 0 0 40px;
     width: 370px;
+    font-size: 20px;
   }
 
   .form__program-selection {
-    padding: 66px 40px 72px;
+    margin: 66px 40px 62px;
+  }
+
+  .form__required-fields-text {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    margin: 0;
+    align-self: center;
+    padding-bottom: 4px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__title {
-    padding: 39px 0 54px;
+    padding: 49px 0 54px;
   }
 
   .form__descripton {
@@ -59,17 +77,23 @@
   }
 
   .form__program-selection {
-    padding: 66px 0 72px;
+    margin: 66px 0 83px;
   }
 
   .form__details-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    margin-bottom: 69px;
   }
 
   .form__group {
     padding: 0;
     display: block;
+  }
+
+  .form__required-fields-text {
+    margin: 0 0 0 10px;
+    padding-bottom: 0;
   }
 }
