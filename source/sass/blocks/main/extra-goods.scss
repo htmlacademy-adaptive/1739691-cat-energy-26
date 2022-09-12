@@ -1,6 +1,6 @@
 .extra-goods__title {
   position: relative;
-  padding-bottom: 36px;
+  padding: 25px 0 34px;
 
   &::after {
     position: absolute;
@@ -8,8 +8,8 @@
     background-color: #68b738;
     width: 53px;
     height: 2px;
-    right: -30px;
-    top: 15px;
+    right: -20px;
+    top: 41px;
   }
 }
 
@@ -26,7 +26,7 @@
   }
 
   .extra-goods__title {
-    padding-bottom: 80px;
+    padding: 8px 37px 80px;
 
     &::before {
       position: absolute;
@@ -35,14 +35,14 @@
       background-color: #68b738;
       width: 30px;
       height: 2px;
-      left: -67px;
-      top: 20px;
+      left: -30px;
+      top: 30px;
     }
 
     &::after {
       width: 328px;
-      right: -70px;
-      top: 20px;
+      right: -30px;
+      top: 30px;
     }
   }
 
@@ -54,8 +54,6 @@
 @media (min-width: $desktop-width) {
   .extra-goods__list {
     outline: none;
-    border-top: 1px solid $special-gray;
-    ;
   }
 
   .extra-goods__wrapper {
@@ -63,15 +61,19 @@
   }
 
   .extra-goods__title {
+    padding: 15px 0;
+    margin-bottom: 65px;
 
     &::before {
       width: 70px;
       left: -110px;
+      top: 37px;
     }
 
     &::after {
       width: 957px;
       right: -110px;
+      top: 37px;
     }
   }
 

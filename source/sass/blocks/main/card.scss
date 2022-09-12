@@ -2,17 +2,87 @@
   display: flex;
   flex-direction: column;
   padding: 20px 0 25px;
+  gap: 13px;
+  position: relative;
+
+  &--show-more{
+    gap: 12px;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: $border-gray;
+  }
+
+  &:last-child::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: $border-gray;
+  }
 }
 
 .card__content-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-bottom: 22px;
+  position: relative;
+
+  &--show-more{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__image-wrapper {
+  position: absolute;
   margin: 0 auto;
-  padding-top: 14px;
+
+  &--show-more{
+    position: static;
+    margin-top: 5px;
+  }
+
+  &--big{
+    bottom: 0;
+    left: 28px;
+  }
+
+  &--small-chicken{
+    left: 36px;
+    bottom: 12px;
+  }
+
+  &--small-fish{
+    left: 36px;
+    bottom: 7px;
+  }
+
+  &--small-buckwheat{
+    left: 36px;
+    bottom: 4px;
+  }
+
+  &--small-rice{
+    left: 34px;
+    bottom: 4px;
+  }
+}
+
+.card__image{
+  display: block;
+}
+
+.card__info-wrapper{
+  padding-bottom: 9px;
+  grid-column: 2 / -1;
 }
 
 .card__title {
@@ -22,8 +92,16 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $special-dark-gray-2;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   width: 76px;
+
+  &--show-more{
+    width: auto;
+    text-align: center;
+    margin-top: 23px;
+    padding-left: 2px;
+    padding-bottom: 8px;
+  }
 }
 
 .card__description {
@@ -34,6 +112,25 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
+
+  &--show-more{
+    justify-content: center;
+  }
+}
+
+.card__value{
+  &--weight{
+    margin-right: 2px;
+  }
+
+  &--taste{
+    margin-right: -1px;
+  }
+
+  &--price{
+    margin-right: -1px;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -45,12 +142,23 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+
+    &--show-more{
+      background-color: $white
+    }
+
+    &::before{
+      display: none;
+    }
+
+    &:last-child::after{
+      display: none;
+    }
   }
 
   .card__content-wrapper {
     grid-template-columns: none;
-    padding-bottom: 33px;
+    padding-bottom: 12px;
   }
 
   .card__image-wrapper {
@@ -61,9 +169,16 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    transform: translateY(-303px);
+    transform: translateY(-211px);
+
+    &--big-chicken{
+      transform: translateY(-204px);
+    }
+
+    &--show-more{
+      transform: translateY(-182px);
+    }
   }
 
   .card__title {
@@ -75,9 +190,85 @@
     width: 150px;
   }
 
+  .card__title-weight{
+    margin-left: 5px;
+  }
+
   .card__description {
     font-size: 16px;
-    padding: 7px 0 9px;
+    padding: 7px 0 7px;
     border-bottom: 1px solid $special-gray;
+
+    &--show-more{
+      text-align: center;
+      margin: 0 auto;
+      min-width: 167px;
+      padding: 8px 30px 7px;
+      line-height: 18px;
+      border-bottom: 1px solid transparent;
+    }
+
+    &:last-child{
+      padding-top: 8px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    padding: 164px 35px 40px 30px;
+    max-width: 245px;
+
+    &--show-more{
+      background-color: $white;
+      outline: 2px solid $basic-gray;
+    }
+  }
+
+  .card__info-wrapper{
+    &--show-more{
+      margin: 0 0 53px;
+    }
+  }
+
+  .card__title{
+    line-height: 21px;
+    padding: 0 0 18px 10px;
+
+    &--show-more{
+      margin: -2px 0 0 13px;
+    }
+  }
+
+  .card__description {
+    margin-left: 10px;
+
+    &--show-more{
+      padding: 0;
+      margin: -2px 0 0 6px;
+    }
+  }
+
+  .card__value {
+    margin-right: 2px;
+  }
+
+  .card__image-wrapper {
+    position: absolute;
+    left: 7px;
+    bottom: 7px;
+
+    &--big{
+      left: 8px;
+      bottom: 10px;
+    }
+
+    &--big-chicken{
+      bottom: 13px;
+    }
+
+    &--show-more{
+      transform: translateY(-222px);
+    }
   }
 }

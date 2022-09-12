@@ -130,7 +130,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    padding-top: 82px;
+    padding-top: 80px;
   }
 
   .programs__list {
@@ -139,7 +139,7 @@
   }
 
   .programs__item {
-    padding: 41px 51px 59px;
+    padding: 41px 52px 59px;
 
     &--weight-loss {
       &::before {
@@ -177,6 +177,10 @@
       content: url(../img/icon-arrow.svg);
       left: 136px;
       top: -3px;
+    }
+
+    &--pro::after{
+      left: 130px;
     }
   }
 }

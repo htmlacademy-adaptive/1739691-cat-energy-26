@@ -8,6 +8,7 @@
   min-width: 100%;
   background-color: $white;
   display: block;
+  z-index: 2;
 }
 
 .site-list__item {
@@ -79,7 +80,7 @@
     &--current::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 2px;
       width: 100%;
       height: 2px;
       right: 1px;
@@ -123,16 +124,14 @@
   .site-list__item {
     font-size: 20px;
     line-height: 30px;
-    padding: 8px 0;
+    padding: 10px 0;
 
     &--current::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       width: 100%;
       height: 2px;
-      right: 1px;
-      left: 1px;
       background-color: $basic-green;
     }
 
@@ -145,11 +144,9 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       width: 100%;
       height: 2px;
-      right: 1px;
-      left: 1px;
       background-color: $white;
     }
   }

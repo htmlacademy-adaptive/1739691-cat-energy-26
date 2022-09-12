@@ -1,25 +1,38 @@
 .extra-goods-item__title {
-  margin: 0;
+  margin: 0 0 0 1px;
   padding: 13px 0;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: $special-dark-gray-2;
+
+  &--water{
+    padding-top: 12px;
+  }
 }
 
 .extra-goods-item {
   display: grid;
   margin: 0;
+  border-top: 1px solid $special-gray;
+
+  &:last-child{
+    border-bottom: 1px solid $special-gray;
+  }
 }
 
 .extra-goods-item__description {
-  margin: 0;
+  margin: 0 0 0 -1px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
   font-family: "Arial";
-  line-height: 14px;
+  line-height: 15px;
+
+  &:nth-child(2){
+    padding-bottom: 14px;
+  }
 }
 
 .extra-goods-item__value {
@@ -27,12 +40,17 @@
 }
 
 .extra-goods-item__button {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .extra-goods-item {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
+    border-top: none;
+
+    &:last-child{
+      border-bottom: none;
+    }
 
     &:not(:last-child) {
       border-bottom: 1px solid $special-gray;
@@ -42,7 +60,7 @@
   .extra-goods-item__content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   .extra-goods-item__title {
@@ -56,13 +74,26 @@
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 2px;
+
+    &:nth-child(2){
+      padding-bottom: 0;
+    }
   }
 
   .extra-goods-item__value {
-    margin-left: 49px;
+    margin-left: 50px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+
+    &--water-price{
+      margin-left: 59px;
+    }
+
+    &--vitamins-price{
+      margin-left: 51px;
+    }
   }
 
   .extra-goods-item__button {
@@ -76,7 +107,15 @@
     grid-template-columns: 1fr 244px;
     padding: 15px 0 16px;
     gap: 38px;
-    border-bottom: 1px solid $special-gray;
+    border-top: 1px solid $special-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $special-gray;
+    }
+
+    &:not(:last-child) {
+      border-bottom: unset;
+    }
   }
 
   .extra-goods-item__content-wrapper {
@@ -91,9 +130,15 @@
     min-width: 288px;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 8px;
+    margin-left: 1px;
   }
 
   .extra-goods-item__value {
     margin: 0;
+
+    &--water-price{
+      margin-right: 10px;
+    }
   }
 }
