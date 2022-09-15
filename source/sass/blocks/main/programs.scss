@@ -52,17 +52,15 @@
   text-decoration: none;
   color: $black;
   padding-top: 19px;
-  display: block;
+  display: flex;
   font-size: 16px;
   line-height: 16px;
-  position: relative;
+
 
   &::after {
-    position: absolute;
-    content: url(../img/icon-arrow.svg);
-    left: 100px;
-    top: 18px;
-    display: block;
+    position: relative;
+    content: url(../img/icon-arrow-big.svg);
+    left: 16px;
   }
 }
 
@@ -115,7 +113,7 @@
 
     &::after {
       position: absolute;
-      content: url(../img/icon-arrow.svg);
+      content: url(../img/icon-arrow-big.svg);
       left: 131px;
       top: -4px;
     }
@@ -174,7 +172,7 @@
 
     &::after {
       position: absolute;
-      content: url(../img/icon-arrow.svg);
+      content: url(../img/icon-arrow-big.svg);
       left: 136px;
       top: -3px;
     }
