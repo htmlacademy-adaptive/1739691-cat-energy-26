@@ -65,24 +65,23 @@
     padding: 0;
     margin: 0 0 77px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
-      width: 30px;
-      height: 2px;
-      left: -70px;
-      top: 22px;
-    }
-
+    &::before,
     &::after {
       position: absolute;
       content: "";
       background-color: $basic-green;
-      width: 145px;
       height: 2px;
-      right: -70px;
       top: 22px;
+    }
+
+    &::before{
+      width: 30px;
+      left: -70px;
+    }
+
+    &::after {
+      width: 145px;
+      right: -70px;
     }
   }
 
@@ -131,21 +130,13 @@
     margin: 0 0 76px;
 
     &::before {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
       width: 70px;
-      height: 2px;
       left: -110px;
       top: 20px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
       width: 778px;
-      height: 2px;
       right: -110px;
       top: 20px;
     }

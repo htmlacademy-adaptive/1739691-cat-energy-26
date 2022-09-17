@@ -57,11 +57,20 @@
   line-height: 16px;
 
 
-  &::after {
-    position: relative;
-    content: url(../img/icon-arrow-big.svg);
-    left: 16px;
-  }
+
+    &::after {
+      position: relative;
+      content: url(../img/icon-arrow.svg);
+      left: 16px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover::after {
+      content: url(../img/icon-arrow-big.svg);
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -112,16 +121,7 @@
     line-height: 30px;
 
     &::after {
-      position: absolute;
-      content: url(../img/icon-arrow-big.svg);
-      left: 131px;
       top: -4px;
-    }
-
-    &:hover {}
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }
@@ -171,14 +171,8 @@
   .programs__link {
 
     &::after {
-      position: absolute;
-      content: url(../img/icon-arrow-big.svg);
-      left: 136px;
       top: -3px;
     }
 
-    &--pro::after{
-      left: 130px;
-    }
   }
 }

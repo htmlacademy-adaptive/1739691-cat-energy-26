@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -31,6 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -38,8 +40,8 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
-    .pipe(gulp.dest('build/js'))
-    .pipe(browser.stream());
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -106,12 +108,17 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
     ui: false,
   });
+  done();
+}
+
+const reload = (done) => {
+  browser.reload
   done();
 }
 
@@ -129,29 +136,29 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
-  );
+);
 
 
 export default gulp.series(
   clean,
-copy,
-copyImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-sprite,
-createWebp
-),
-gulp.series(
-server,
-watcher
-));
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));

@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anomymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anomymous">
   <title>Подбор программы</title>
 </head>
 
@@ -62,17 +62,17 @@
             <legend class="visually-hidden">Кошачьи данные</legend>
             <div class="details__item">
               <label class="details__item-name details__item-name--name" for="details-name">Имя:*</label>
-              <input class="details__item-text details__item-text--name error" type="text" name="details-name" id="form-name" placeholder="Барсик"
+              <input class="details__item-text details__item-text--name" type="text" name="details-name" id="form-name" placeholder="Барсик"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--weight" for="details-weight">Вес (кг):*</label>
-              <input class="details__item-text details__item-text--weight error" type="number" name="details-weight" id="details-weight" placeholder="7"
+              <input class="details__item-text details__item-text--weight " type="number" name="details-weight" id="details-weight" placeholder="7"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--age" for="details-age">Возраст (лет):</label>
-              <input class="details__item-text details__item-text--age error" type="number" name="details-age" id="details-age" placeholder="7">
+              <input class="details__item-text details__item-text--age " type="number" name="details-age" id="details-age" placeholder="7">
             </div>
           </fieldset>
 
