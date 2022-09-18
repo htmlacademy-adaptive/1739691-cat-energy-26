@@ -40,12 +40,14 @@
 .form-additionally__control {
   position: relative;
   display: block;
-  padding: 5px 0 7px 46px
-}
+  padding: 5px 0 7px 46px;
 
-.form-additionally__control {
   &:hover>.form-additionally__control-mark-checkbox {
     border: 1px solid $border-gray-3;
+  }
+
+  &--disabled{
+    opacity: 0.3;
   }
 }
 

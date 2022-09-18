@@ -45,19 +45,53 @@
   text-transform: uppercase;
   color: $special-dark-gray;
   border: none;
-  outline: 1px solid $special-gray;
+  outline: 1px solid $basic-gray-4;
+
+  &:hover {
+    outline: 1px solid $special-gray;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-gray;
+
+    & + .form-contact__phone-logo{
+      fill: $basic-green;
+    }
+
+    & + .form-contact__email-logo{
+      stroke: $basic-green;
+    }
+  }
+
+  &--error {
+    outline: 2px solid $status-error;
+
+    & + .form-contact__phone-logo{
+      fill: $status-error;
+    }
+
+    & + .form-contact__email-logo{
+      stroke: $status-error;
+    }
+  }
+
+  &--disabled{
+    opacity: 0.3;
+  }
 }
 
 .form-contact__email-logo {
   position: absolute;
   right: 15px;
   top: calc(50% - 7px);
+  stroke: $black;
 }
 
 .form-contact__phone-logo {
   position: absolute;
   right: 13px;
   top: calc(50% - 10px);
+  fill: $black;
 }
 
 @media (min-width: $tablet-width) {

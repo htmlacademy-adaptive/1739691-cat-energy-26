@@ -44,9 +44,13 @@
   &:hover>.program-type__control-mark-radio {
     border: 1px solid $border-gray-3;
   }
+
+  &--disabled{
+    opacity: 0.3;
+  }
 }
 
-.program-type__control-input:checked+.program-type__control-mark-radio::before {
+.program-type__control-input:checked + .program-type__control-mark-radio::before {
   position: absolute;
   content: "";
   width: 14px;
@@ -97,7 +101,7 @@
     padding: 5px 0 5px 60px;
   }
 
-  .program-type__control-input:checked+.program-type__control-mark-radio::before {
+  .program-type__control-input:checked + .program-type__control-mark-radio::before {
     position: absolute;
     content: "";
     width: 18px;
