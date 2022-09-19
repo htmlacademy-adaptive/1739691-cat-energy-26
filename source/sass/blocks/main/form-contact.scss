@@ -45,19 +45,53 @@
   text-transform: uppercase;
   color: $special-dark-gray;
   border: none;
-  outline: 1px solid $special-gray;
+  outline: 1px solid $basic-gray-4;
+
+  &:hover {
+    outline: 1px solid $special-gray;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-gray;
+
+    & + .form-contact__phone-logo{
+      fill: $basic-green;
+    }
+
+    & + .form-contact__email-logo{
+      stroke: $basic-green;
+    }
+  }
+
+  &--error {
+    outline: 2px solid $status-error;
+
+    & + .form-contact__phone-logo{
+      fill: $status-error;
+    }
+
+    & + .form-contact__email-logo{
+      stroke: $status-error;
+    }
+  }
+
+  &--disabled{
+    opacity: 0.3;
+  }
 }
 
 .form-contact__email-logo {
   position: absolute;
   right: 15px;
   top: calc(50% - 7px);
+  stroke: $black;
 }
 
 .form-contact__phone-logo {
   position: absolute;
   right: 13px;
   top: calc(50% - 10px);
+  fill: $black;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,24 +99,23 @@
     padding: 0;
     margin: 0 0 77px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
-      width: 30px;
-      height: 2px;
-      left: -70px;
-      top: 22px;
-    }
-
+    &::before,
     &::after {
       position: absolute;
       content: "";
       background-color: $basic-green;
-      width: 145px;
       height: 2px;
-      right: -70px;
       top: 22px;
+    }
+
+    &::before{
+      width: 30px;
+      left: -70px;
+    }
+
+    &::after {
+      width: 145px;
+      right: -70px;
     }
   }
 
@@ -131,21 +164,13 @@
     margin: 0 0 76px;
 
     &::before {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
       width: 70px;
-      height: 2px;
       left: -110px;
       top: 20px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      background-color: $basic-green;
       width: 778px;
-      height: 2px;
       right: -110px;
       top: 20px;
     }

@@ -16,16 +16,19 @@
   display: block;
   line-height: 0;
   padding: 2px;
-  color: $special-gray-4;
+  fill: $special-gray-4;
 
-  &:hover {
-    color: $basic-green;
+  &:hover{
+    fill: $basic-green;
   }
 
   &:active {
-    color: $basic-green;
     opacity: 0.3;
   }
+}
+
+.social-list__icon:hover{
+  fill: $basic-green;
 }
 
 @media (min-width: $tablet-width) {

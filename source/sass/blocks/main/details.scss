@@ -36,8 +36,12 @@
     outline: 1px solid $special-gray;
   }
 
-  &:active {
+  &:focus {
     outline: 2px solid $special-dark-gray;
+  }
+
+  &--error{
+    outline: 2px solid $status-error;
   }
 }
 

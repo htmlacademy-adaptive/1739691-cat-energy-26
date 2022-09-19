@@ -4,7 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anomymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anomymous">
   <title>Подбор программы</title>
 </head>
 
@@ -56,17 +62,17 @@
             <legend class="visually-hidden">Кошачьи данные</legend>
             <div class="details__item">
               <label class="details__item-name details__item-name--name" for="details-name">Имя:*</label>
-              <input class="details__item-text details__item-text--name error" type="text" name="details-name" id="form-name" placeholder="Барсик"
+              <input class="details__item-text details__item-text--name " type="text" name="details-name" id="details-name" placeholder="Барсик"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--weight" for="details-weight">Вес (кг):*</label>
-              <input class="details__item-text details__item-text--weight error" type="number" name="details-weight" id="details-weight" placeholder="7"
+              <input class="details__item-text details__item-text--weight " type="number" name="details-weight" id="details-weight" placeholder="7"
                 required>
             </div>
             <div class="details__item">
               <label class="details__item-name details__item-name--age" for="details-age">Возраст (лет):</label>
-              <input class="details__item-text details__item-text--age error" type="number" name="details-age" id="details-age" placeholder="7">
+              <input class="details__item-text details__item-text--age " type="number" name="details-age" id="details-age" placeholder="7">
             </div>
           </fieldset>
 
@@ -75,8 +81,8 @@
             <ul class="program-type__list">
               <li class="program-type__item">
                 <label class="program-type__control program-type__control--weight-loss">
-                  <input class="program-type__control-input visually-hidden disabled" type="radio" name="program"
-                    checked>
+                  <input class="program-type__control-input visually-hidden" type="radio" name="program"
+                    checked >
                   <span class="program-type__control-mark-radio"></span>
                   <span class="program-type__control-label">Похудение</span>
                 </label>
@@ -168,7 +174,6 @@
                 <span class="form-additionally__control-label">Витамины</span>
               </label>
             </li>
-
           </ul>
 
           <div class="form__item-wrapper">
@@ -198,32 +203,32 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container-content">
       <a class="main-footer__link" href="index.html">
-        <svg width="128" height="24" viewBox="0 0 128 24" fill="none">
-          <use href="../img/sprite.svg#site-logo-footer" />
+        <svg width="128" height="24">
+          <use href="img/sprite.svg#site-logo-footer"/>
         </svg>
       </a>
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="">
             <span class="visually-hidden">Вконтакте</span>
-            <svg width="27" height="17" viewBox="0 0 27 17">
-              <use href="./img/sprite.svg#vk" />
+            <svg width="27" height="17">
+              <use href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="">
             <span class="visually-hidden">Ютуб</span>
-            <svg width="24" height="19" viewBox="0 0 24 19" fill="none">
-              <use href="./img/sprite.svg#youtube" />
+            <svg width="24" height="19" >
+              <use href="img/sprite.svg#youtube"/>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="">
             <span class="visually-hidden">Телеграм</span>
-            <svg width="20" height="18" viewBox="0 0 20 18" fill="none">
-              <use href="./img/sprite.svg#telegram" />
+            <svg width="20" height="18">
+              <use href="img/sprite.svg#telegram"></use>
             </svg>
           </a>
         </li>
@@ -231,8 +236,8 @@
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">HTML Academy</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none">
-            <use href="./img/sprite.svg#html-academy-logo" />
+          <svg width="27" height="34">
+            <use href="img/sprite.svg#html-academy-logo"/>
           </svg>
         </a>
       </div>
