@@ -58,6 +58,10 @@
   top: calc(50% - 7px);
 }
 
+.form-additionally__control-input:focus + .form-additionally__control-mark-checkbox{
+  outline: 2px solid $special-dark-gray;
+}
+
 .form-additionally__control-mark-checkbox {
   position: absolute;
   content: "";

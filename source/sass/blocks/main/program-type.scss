@@ -61,6 +61,10 @@
   top: calc(50% - 7px);
 }
 
+.program-type__control-input:focus + .program-type__control-mark-radio{
+  outline: 2px solid $special-dark-gray;
+}
+
 .program-type__control-mark-radio {
   position: absolute;
   top: 0;
