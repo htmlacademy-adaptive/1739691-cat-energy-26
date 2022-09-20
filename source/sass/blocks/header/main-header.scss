@@ -22,20 +22,6 @@
   }
 }
 
-// .main-header__logo-secondary {
-//   display: block;
-//   padding: 23px 0 24px;
-//   margin: 0 auto;
-
-//   &:hover {
-//     opacity: 0.8;
-//   }
-
-//   &:focus {
-//     opacity: 0.6;
-//   }
-
-
 .main-header__logo-image {
   display: block;
 }
@@ -58,10 +44,6 @@
     position: static;
     padding: 0;
   }
-
-  .main-header__logo-secondary {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -82,10 +64,10 @@
       height: 694px;
       width: 50%;
 
-      @media (min-resolution: 2dppx){
+      @media (min-resolution: 2dppx) {
         background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)),
-        url(../img/index-background-desktop@2x.png);
+            rgba(104, 183, 56, 0.85)),
+          url(../img/index-background-desktop@2x.png);
       }
     }
   }
