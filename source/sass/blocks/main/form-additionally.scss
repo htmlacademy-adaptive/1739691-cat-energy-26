@@ -53,12 +53,12 @@
 
 .form-additionally__control-input:checked ~ .form-additionally__control-mark-checkbox::before {
   position: absolute;
-  content: url(../img/checkbox-checked.svg);
+  content: url("../img/checkbox-checked.svg");
   left: calc(50% - 9px);
   top: calc(50% - 7px);
 }
 
-.form-additionally__control-input:focus + .form-additionally__control-mark-checkbox{
+.form-additionally__control-input:focus + .form-additionally__control-mark-checkbox {
   outline: 2px solid $special-dark-gray;
 }
 
@@ -140,7 +140,6 @@
 
 @media (min-width: $desktop-width) {
   .form-additionally__title {
-
     &::before {
       width: 70px;
       left: -110px;

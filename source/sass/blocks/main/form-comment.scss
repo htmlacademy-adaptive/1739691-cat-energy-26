@@ -28,8 +28,8 @@
   margin-bottom: 9px;
   resize: none;
 
-  &:focus{
-      outline: 2px solid $special-dark-gray;
+  &:focus {
+    outline: 2px solid $special-dark-gray;
   }
 }
 
@@ -69,7 +69,6 @@
 
 @media (min-width: $desktop-width) {
   .form-comment__title {
-
     &::before {
       width: 70px;
       left: -110px;

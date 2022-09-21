@@ -61,7 +61,7 @@
   top: calc(50% - 7px);
 }
 
-.program-type__control-input:focus + .program-type__control-mark-radio{
+.program-type__control-input:focus + .program-type__control-mark-radio {
   outline: 2px solid $special-dark-gray;
 }
 
@@ -89,7 +89,7 @@
       display: none;
     }
 
-    &::after{
+    &::after {
       display: none;
     }
   }

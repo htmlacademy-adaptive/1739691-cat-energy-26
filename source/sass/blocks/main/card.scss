@@ -108,7 +108,7 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
-  font-family: "Arial" sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
@@ -190,7 +190,7 @@
     width: 150px;
   }
 
-  .card__title-weight{
+  .card__title-weight {
     margin-left: 5px;
   }
 
