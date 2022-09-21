@@ -88,13 +88,12 @@
       background-color: $basic-green;
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: -4px;
     }
   }
 
   .site-list__link {
-
     &:hover {
       opacity: 0.6;
     }
@@ -135,7 +134,7 @@
       background-color: $basic-green;
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: 0;
     }
   }

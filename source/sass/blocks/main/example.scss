@@ -12,7 +12,7 @@
 }
 
 .example__description {
-  font-family: "Arial";
+  font-family: "Arial" sans-serif;
   color: $special-dark-gray;
   margin: 0 0 20px;
   padding-top: 2px;
@@ -70,11 +70,11 @@
     background-color: $white;
   }
 
-  &:hover>.example__range-scale-circle {
+  &:hover > .example__range-scale-circle {
     border-color: $basic-green;
   }
 
-  &:hover>.example__range-scale-circle>.example__range-scale-button {
+  &:hover > .example__range-scale-circle > .example__range-scale-button {
     color: $basic-green;
   }
 
@@ -83,11 +83,11 @@
     background-color: $white;
   }
 
-  &:active>.example__range-scale-circle {
+  &:active > .example__range-scale-circle {
     border-color: rgba(94, 170, 47, 0.6);
   }
 
-  &:active>.example__range-scale-circle>.example__range-scale-button {
+  &:active > .example__range-scale-circle > .example__range-scale-button {
     color: rgba(94, 170, 47, 0.6);
   }
 }

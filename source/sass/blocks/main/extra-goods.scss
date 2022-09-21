@@ -20,9 +20,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .extra-goods__list {
     outline: 1px solid $special-gray;
+    display: grid;
   }
 
   .extra-goods__title {
@@ -44,10 +44,6 @@
       right: -30px;
       top: 30px;
     }
-  }
-
-  .extra-goods__list {
-    display: grid;
   }
 }
 
