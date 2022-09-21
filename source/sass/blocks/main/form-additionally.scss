@@ -32,7 +32,7 @@
   font: inherit;
   text-transform: uppercase;
 
-  &:last-child{
+  &:last-child {
     margin-top: -1px;
   }
 }
@@ -42,20 +42,24 @@
   display: block;
   padding: 5px 0 7px 46px;
 
-  &:hover>.form-additionally__control-mark-checkbox {
+  &:hover > .form-additionally__control-mark-checkbox {
     border: 1px solid $border-gray-3;
   }
 
-  &--disabled{
+  &--disabled {
     opacity: 0.3;
   }
 }
 
-.form-additionally__control-input:checked~.form-additionally__control-mark-checkbox::before {
+.form-additionally__control-input:checked ~ .form-additionally__control-mark-checkbox::before {
   position: absolute;
-  content: url(../img/checkbox-checked.svg);
+  content: url("../img/checkbox-checked.svg");
   left: calc(50% - 9px);
   top: calc(50% - 7px);
+}
+
+.form-additionally__control-input:focus + .form-additionally__control-mark-checkbox {
+  outline: 2px solid $special-dark-gray;
 }
 
 .form-additionally__control-mark-checkbox {
@@ -86,7 +90,7 @@
       top: 22px;
     }
 
-    &::before{
+    &::before {
       width: 30px;
       left: -70px;
     }
@@ -106,12 +110,12 @@
 
   .form-additionally__control {
     position: relative;
-    padding: 5px 0 5px 59px
+    padding: 5px 0 5px 59px;
   }
 
-  .form-additionally__control-input:checked+.form-additionally__control-mark-checkbox::before {
+  .form-additionally__control-input:checked + .form-additionally__control-mark-checkbox::before {
     position: absolute;
-    content: url(../img/checkbox-checked-tablet.svg);
+    content: url("../img/checkbox-checked-tablet.svg");
     left: calc(50% - 12px);
     top: calc(50% - 13px);
   }
@@ -136,7 +140,6 @@
 
 @media (min-width: $desktop-width) {
   .form-additionally__title {
-
     &::before {
       width: 70px;
       left: -110px;
@@ -151,7 +154,7 @@
   }
 
   .form-additionally__control {
-    padding: 7px 0 5px 59px
+    padding: 7px 0 5px 59px;
   }
 
   .form-additionally__list {

@@ -9,8 +9,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anomymous">
-  <link rel="preload" href="/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anomymous">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Каталог продукции</title>
 </head>
 
@@ -21,13 +21,9 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
             alt="Логотип Кэт энерджи">
         </picture>
-      </a>
-      <a class="main-header__logo-secondary">
-        <img class="main-header__logo-image" src="img/logo-mobile-secondary.svg" width="101" height="18"
-          alt="Кэт энерджи">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -59,10 +55,10 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--small-chicken">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/catalog-card-small-chicken-desktop.png" width="161" height="172">
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-chicken-tablet.png" width="161" height="172">
-                  <img class="card__image" src="img/catalog-card-small-chicken.png" width="68" height="78"
-                  alt="Кошачья еда со вкусом курицы, 500 грамм">
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-chicken-tablet.png 1x, img/catalog-card-small-chicken-tablet@2x.png 2x" width="161"
+                    height="172">
+                  <img class="card__image" src="img/catalog-card-small-chicken.png" srcset="img/catalog-card-small-chicken@2x.png 2x" width="68" height="78"
+                    alt="Кошачья еда со вкусом курицы, 500 грамм">
                 </picture>
               </div>
               <div class="card__info-wrapper">
@@ -85,9 +81,11 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--big card__image-wrapper--big-chicken">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-chicken-desktop.png" width="172" height="202">
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-chicken-tablet.png" width="168" height="206">
-                  <img class="card__image" src="img/catalog-card-big-chicken.png" width="84" height="101"
+                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-chicken-desktop.png 1x, img/catalog-card-big-chicken-desktop@2x.png 2x" width="172"
+                    height="202">
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-chicken-tablet.png 1x, img/catalog-card-big-chicken-tablet@2x.png 2x" width="168"
+                    height="206">
+                  <img class="card__image" src="img/catalog-card-big-chicken.png" srcset="img/catalog-card-big-chicken@2x.png 2x" width="84" height="101"
                     alt="Кошачья еда со вкусом курицы, 1000 грамм">
                 </picture>
               </div>
@@ -111,8 +109,9 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--small-fish">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-fish-tablet.png" width="163" height="174">
-                  <img class="card__image" src="img/catalog-card-small-fish.png" width="68" height="78"
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-fish-tablet.png 1x, img/catalog-card-small-fish-tablet@2x.png 2x" width="163"
+                    height="174">
+                  <img class="card__image" src="img/catalog-card-small-fish.png" srcset="img/catalog-card-small-fish@2x.png 2x" width="68" height="78"
                     alt="Кошачья еда со вкусом рыбы, 500 грамм">
                 </picture>
               </div>
@@ -136,9 +135,11 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--big">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-fish-desktop.png" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-fish-tablet.png" width="168" height="200">
-                  <img class="card__image" src="img/catalog-card-big-fish.png" width="84" height="101"
+                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-fish-desktop.png 1x, img/catalog-card-big-fish-desktop@2x.png 2x" width="172"
+                    height="196">
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-fish-tablet.png 1x, img/catalog-card-big-fish-tablet@2x.png 2x" width="168"
+                    height="200">
+                  <img class="card__image" src="img/catalog-card-big-fish.png" srcset="img/catalog-card-big-fish@2x.png 2x" width="84" height="101"
                     alt="Кошачья еда со вкусом рыбы, 1000 грамм">
                 </picture>
               </div>
@@ -162,9 +163,10 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--small-buckwheat">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-buckwheat-tablet.png" width="161" height="171">
-                <img class="card__image" src="img/catalog-card-small-buckwheat.png" width="68" height="78"
-                  alt="Кошачья еда со вкусом гречки, 500 грамм">
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-buckwheat-tablet.png 1x, img/catalog-card-small-buckwheat-tablet@2x.png 2x" width="161"
+                    height="171">
+                  <img class="card__image" src="img/catalog-card-small-buckwheat.png" srcset="img/catalog-card-small-buckwheat@2x.png 2x" width="68" height="78"
+                    alt="Кошачья еда со вкусом гречки, 500 грамм">
                 </picture>
               </div>
               <div class="card__info-wrapper">
@@ -187,10 +189,12 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--big">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-buckwheat-desktop.png" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-buckwheat-tablet.png" width="168" height="200">
-                <img class="card__image" src="img/catalog-card-big-buckwheat.png" width="84" height="101"
-                  alt="Кошачья еда со вкусом гречки, 1000 грамм">
+                  <source media="(min-width: 1440px)" srcset="img/catalog-card-big-buckwheat-desktop.png 1x, img/catalog-card-big-buckwheat-desktop@2x.png 2x" width="172"
+                    height="196">
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-big-buckwheat-tablet.png 1x, img/catalog-card-big-buckwheat-tablet@2x.png 2x" width="168"
+                    height="200">
+                  <img class="card__image" src="img/catalog-card-big-buckwheat.png" srcset="img/catalog-card-big-buckwheat@2x.png 2x" width="84" height="101"
+                    alt="Кошачья еда со вкусом гречки, 1000 грамм">
                 </picture>
               </div>
               <div class="card__info-wrapper">
@@ -213,8 +217,9 @@
             <div class="card__content-wrapper">
               <div class="card__image-wrapper card__image-wrapper--small-rice">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-rice-tablet.png" width="163" height="174">
-                  <img class="card__image" src="img/catalog-card-small-rice.png" width="72" height="84"
+                  <source media="(min-width: 768px)" srcset="img/catalog-card-small-rice-tablet.png 1x, img/catalog-card-small-rice-tablet@2x.png 2x" width="163"
+                    height="174">
+                  <img class="card__image" src="img/catalog-card-small-rice.png" srcset="img/catalog-card-small-rice@2x.png 2x" width="72" height="84"
                     alt="Кошачья еда со вкусом риса, 500 грамм">
                 </picture>
               </div>
@@ -239,8 +244,7 @@
               <div class="card__image-wrapper card__image-wrapper--show-more">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/show-more-tablet.svg" width="60" height="60">
-                  <img class="card__image" src="img/show-more.svg" width="30" height="30"
-                  alt="Показать больше товаров">
+                  <img class="card__image" src="img/show-more.svg" width="30" height="30" alt="Показать больше товаров">
                 </picture>
               </div>
               <div class="card__info-wrapper card__info-wrapper--show-more">
@@ -303,7 +307,7 @@
             <picture>
               <source media="(min-width: 768px)" srcset="./img/special-offer-tablet.svg" width="80" height="82">
               <img class="special-offer__image-gift" src="./img/special-offer.svg" width="78" height="80"
-              alt="Логотип подарка">
+                alt="Логотип подарка">
             </picture>
 
             <p class="special-offer__description">Закажите все <br> и получите чехол для кота в подарок!</p>
@@ -331,7 +335,7 @@
     <div class="main-footer__wrapper container-content">
       <a class="main-footer__link" href="index.html">
         <svg width="128" height="24">
-          <use href="img/sprite.svg#site-logo-footer"/>
+          <use href="img/sprite.svg#site-logo-footer" />
         </svg>
       </a>
       <ul class="main-footer__social-list social-list">
@@ -346,8 +350,8 @@
         <li class="social-list__item">
           <a class="social-list__link" href="">
             <span class="visually-hidden">Ютуб</span>
-            <svg width="24" height="19" >
-              <use href="img/sprite.svg#youtube"/>
+            <svg width="24" height="19">
+              <use href="img/sprite.svg#youtube" />
             </svg>
           </a>
         </li>
@@ -361,10 +365,10 @@
         </li>
       </ul>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">HTML Academy</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="copyright__text">HTML Academy</b>
           <svg width="27" height="34">
-            <use href="img/sprite.svg#html-academy-logo"/>
+            <use href="img/sprite.svg#html-academy-logo" />
           </svg>
         </a>
       </div>

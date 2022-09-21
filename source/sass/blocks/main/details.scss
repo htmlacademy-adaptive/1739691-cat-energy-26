@@ -10,13 +10,13 @@
   align-self: center;
 
   &--weight,
-  &--age{
+  &--age {
     margin-right: 3px;
   }
 }
 
 .details__item-text::-webkit-outer-spin-button,
-.details__item-text::-webkit-inner-spin-button  {
+.details__item-text::-webkit-inner-spin-button {
   appearance: none;
 }
 
@@ -31,7 +31,6 @@
   outline: 1px solid $basic-gray-4;
   padding: 13px 0 14px 15px;
 
-
   &:hover {
     outline: 1px solid $special-gray;
   }
@@ -40,7 +39,7 @@
     outline: 2px solid $special-dark-gray;
   }
 
-  &--error{
+  &--error {
     outline: 2px solid $status-error;
   }
 }
@@ -60,7 +59,7 @@
   .details__item-text {
     padding: 10px 10px 11px 18px;
 
-    &--age{
+    &--age {
       margin-left: -2px;
       padding-left: 19px;
     }
@@ -85,8 +84,7 @@
   }
 
   .details__item-text {
-
-    &--age{
+    &--age {
       padding-left: 16px;
     }
   }

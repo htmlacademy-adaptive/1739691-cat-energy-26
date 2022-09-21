@@ -13,7 +13,7 @@
   padding-bottom: 29px;
   border-bottom: 1px solid $border-gray;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 
@@ -39,10 +39,6 @@
     align-items: center;
   }
 
-  .copyright__text {
-    margin-right: 24px;
-  }
-
   .main-footer__link {
     padding: 7px 0 0;
     border: none;
@@ -52,5 +48,6 @@
   .main-footer__copyright {
     padding: 0;
     border: none;
+    display: flex;
   }
 }

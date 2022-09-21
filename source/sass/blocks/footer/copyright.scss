@@ -1,7 +1,4 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  color: $special-dark-gray;
   cursor: pointer;
 
   &:hover > .copyright__link {
@@ -15,13 +12,22 @@
 
 .copyright__text {
   align-self: center;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-
+  color: $special-dark-gray;
 }
 
 .copyright__link {
   line-height: 0;
   fill: $special-gray-4;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 24px;
+  }
 }
